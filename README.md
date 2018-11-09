@@ -85,7 +85,7 @@ CREATE TABLE Counts (
   );
 ```
 
-This schema helps quickly answer questions such as how many unique visits where there for a given site and month (or week or day) where feature1 is 'facebook.com'. The composite partition key helps fetch the columns for a give site, month and feature value. The clustering keys sort the columns by total or unique counts for the month, weeks of that month or days in the month.
+This schema helps quickly answer questions such as how many unique visits were there for a given site and month (or week or day) where `feature1` is 'facebook.com'. The composite partition key helps fetch the columns for a give site, month and feature value combination. The clustering keys sort the columns by total or unique counts for the month, week or day.
 
 E.g.
 
