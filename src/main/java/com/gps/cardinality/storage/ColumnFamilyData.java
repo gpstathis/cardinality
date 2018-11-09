@@ -164,8 +164,7 @@ public class ColumnFamilyData {
    *     if the specified key is null
    */
   Object get(String key) {
-    Object ret = data.get(key);
-    return ret;
+    return data.get(key);
   }
 
   /**
