@@ -20,7 +20,7 @@ TODO: discuss why Cassandra might be a good choice.
 
 ### Raw data tables
 
-Purpose: store the original raw requests the be able to discern uniqe visits vs. all page views.
+Purpose: store the original raw requests to allow discerning uniqe visits vs. all page views.
 
 Design goals:
 
@@ -63,6 +63,12 @@ Partition Key: 'site1:1530403200:acd9cc5b-165b-4d5d-bbcc-50c840038b63'
 ```
 
 ### Count tables
+
+Purpose: store the monthly, weekly and daily visit counts for each site, for every combination of feature values.
+
+Design goals:
+
+* Trade storage for query speed by pre-computing the results using counters as the raw data comes in.
 
 ```
 CREATE TABLE Counts (
