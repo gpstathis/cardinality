@@ -90,9 +90,9 @@ This schema helps quickly answer questions such as how many unique visits were t
 E.g.
 
 ```
-          site id     month      feature1 value
-                |     |          |
-Partition Key: 'site1:1530403200:feature1=facebook.com:feature2='
+          site id     month      feature1     empty feature2
+                |     |          |            |
+Partition Key: 'site1:1530403200:facebook.com:'
            metric    interval start      counter
            |         |                   |
 =>(column='day_total:1530403200', value='1')
