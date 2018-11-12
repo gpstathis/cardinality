@@ -24,11 +24,11 @@ package com.gps.cardinality;
 
 import static com.gps.cardinality.utils.DataGenerator.generateUUIDs;
 import static com.gps.cardinality.utils.Timestamps.toEpoch;
+import static picocli.CommandLine.Option;
 
 import com.gps.cardinality.storage.Database;
 import com.gps.cardinality.utils.DataGenerator;
 import com.gps.cardinality.utils.DataGenerator.GeneratedData;
-import com.gps.cardinality.utils.Throttle;
 
 import java.util.List;
 import java.util.Map;
@@ -38,40 +38,82 @@ import java.util.UUID;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
 
+import picocli.CommandLine;
+import picocli.CommandLine.Command;
+
 /**
  * Entry point for the simulation.
  *
  * @author gstathis
  * Created on: 2018-11-05
  */
-public class Cardinality {
+@Command(name = "cardinality",
+    mixinStandardHelpOptions = true,
+    version = "Cardinality by George Stathis, v1")
+public class Cardinality implements Runnable {
+
+  @Option(names = {"-r", "--referers"},
+      arity = "1..*",
+      required = true,
+      description = "A list of referers")
+  String[] referers;
+
+  @Option(names = {"-p", "--landing_pages"},
+      arity = "1..*",
+      required = true,
+      description = "A list of landing pages")
+  String[] landingPages;
 
   private Database db;
+
+  @Option(names = {"-s", "--site_id"},
+      required = true,
+      description = "Provide a sample site id")
+  private String siteId;
+
+  @Option(names = {"-g", "--num_guids"},
+      required = true,
+      description = "The number of random guids to select from")
+  private int numGuids;
+
+  @Option(names = {"-f", "--from"},
+      required = true,
+      description = "A 'yyyy-MM-dd' formatted date representing the date from which the random "
+                    + "timestamps should start")
+  private String from;
+
+  @Option(names = {"-t", "--to"},
+      required = true,
+      description = "A 'yyyy-MM-dd' formatted date representing the date when the random "
+                    + "timestamps should stop")
+  private String to;
+
+  @Option(names = {"-n", "--num_samples"},
+      required = true,
+      description = "The number of samples to generate")
+  private int numSamples;
 
   private Cardinality() {
     db = new Database();
   }
 
   public static void main(String[] args) {
-    Cardinality cardinality = new Cardinality();
-    cardinality.run("site1");
+    CommandLine.run(new Cardinality(), args);
   }
 
   /**
-   * Scratchpad for rapid development. For now, it combines in one place generating mock data
-   * populating some tables and printing them to the console to help visualize the results.
-   *
-   * TODO: remove
+   * Generates mock data, populating some tables and printing them to the console to help
+   * visualize the results.
    */
-  private void run(String siteId) {
+  public void run() {
     db.createTables(siteId, new TreeSet<>(List.of("feature1", "feature2")));
-    List<UUID> guids = generateUUIDs(50);
+    List<UUID> guids = generateUUIDs(numGuids);
     Supplier<GeneratedData> randomDataSupplier = () -> DataGenerator
-        .generate(guids, List.of("facebook.com", "google.com"),
-            List.of("/index.html", "/product1.html"),
-            toEpoch(2018, 10, 1),
-            toEpoch(2018, 11, 1), Throttle.create(100));
-    Stream.generate(randomDataSupplier).limit(100).forEach(data -> {
+        .generate(guids, List.of(referers),
+            List.of(landingPages),
+            toEpoch(from),
+            toEpoch(to), null);
+    Stream.generate(randomDataSupplier).limit(numSamples).forEach(data -> {
       db.track(
           siteId, data.timestamp, data.guid,
           new TreeMap<>(Map.of("feature1", data.feature1, "feature2", data.feature2)));

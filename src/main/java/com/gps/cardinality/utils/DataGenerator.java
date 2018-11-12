@@ -64,7 +64,9 @@ public class DataGenerator {
   public static GeneratedData generate(
       Random rand, List<UUID> guids, List<String> referers, List<String> landingPages,
       int intervalStart, int intervalEnd, Throttle throttle) {
-    throttle.acquire();
+    if (null != throttle) {
+      throttle.acquire();
+    }
     return new GeneratedData(
         guids.get(rand.nextInt(guids.size())).toString(),
         (long) (rand.nextInt((intervalEnd - intervalStart) + 1) + intervalStart),
