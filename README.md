@@ -113,6 +113,42 @@ Partition Key: 'site1:1530403200:facebook.com:'
 * Java 11
 * Gradle
 
+## Building Fat Jar
+
+```
+$ gradle clean customFatJar
+
+BUILD SUCCESSFUL in 0s
+3 actionable tasks: 2 executed, 1 up-to-date
+```
+
+## Usage
+
+```
+$ java -jar build/libs/cardinality.jar -h
+Usage: java -jar build/libs/cardinality.jar [-hV] -f=<from> -g=<numGuids>
+                                            -n=<numSamples> -s=<siteId> -t=<to>
+                                            -p=<landingPages>...
+                                            [-p=<landingPages>...]...
+                                            -r=<referers>...
+                                            [-r=<referers>...]...
+  -f, --from=<from>        A 'yyyy-MM-dd' formatted date representing the date from
+                             which the random timestamps should start
+  -g, --num_guids=<numGuids>
+                           The number of random guids to select from
+  -h, --help               Show this help message and exit.
+  -n, --num_samples=<numSamples>
+                           The number of samples to generate
+  -p, --landing_pages=<landingPages>...
+                           A list of landing pages
+  -r, --referers=<referers>...
+                           A list of referers
+  -s, --site_id=<siteId>   Provide a sample site id
+  -t, --to=<to>            A 'yyyy-MM-dd' formatted date representing the date when
+                             the random timestamps should stop
+  -V, --version            Print version information and exit.
+```
+
 ## Running Tests
 
 ```
@@ -120,7 +156,11 @@ $ gradle clean test
 
 > Task :test
 
+com.gps.cardinality.utils.TimestampsTest > numsToEpoch PASSED
+
 com.gps.cardinality.utils.TimestampsTest > intervalsTest PASSED
+
+com.gps.cardinality.utils.TimestampsTest > stringToEpoch PASSED
 
 com.gps.cardinality.storage.ColumnFamilyDataTest > counterTest PASSED
 
@@ -141,6 +181,10 @@ com.gps.cardinality.storage.ColumnFamilyTest > updateIfExistsTest PASSED
 com.gps.cardinality.storage.ColumnFamilyTest > selectOneTest PASSED
 
 com.gps.cardinality.storage.ColumnFamilyTest > updateTest PASSED
+
+com.gps.cardinality.storage.DatabaseTest > featureNameCombinationsTest PASSED
+
+com.gps.cardinality.storage.DatabaseTest > featureNameValueCombinationsTest PASSED
 
 BUILD SUCCESSFUL in 1s
 4 actionable tasks: 4 executed
