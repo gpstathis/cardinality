@@ -14,7 +14,11 @@ The challenge is to figure out a scalable solution to keeping track of all this 
 
 ## Storage Engine
 
-TODO: discuss why Cassandra might be a good choice.
+The target storage engine in this example is Apache Cassandra. Cassandra is a good candidate for this type of use case and the workload it entails due to the following reasons:
+
+* Cassandra is built for fast writes: it's built as an append-only log where all writes are done sequentially. That implies a lower write latency. Cassandra also partitions the key space allowing for machines to write in parallel, achieving higher write throughputs. Large organizations such a Netflix have posted write ups demonstrating the type of write speeds that can be seen at scale: https://medium.com/netflix-techblog/revisiting-1-million-writes-per-second-c191a84864cc
+* It can handle very large data sets
+* It's known to scale linearly which makes it ideal for predicting capacity based on current/predicted throughput
 
 ## Data Modeling
 
