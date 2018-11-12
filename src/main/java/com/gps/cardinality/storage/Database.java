@@ -22,12 +22,19 @@
 
 package com.gps.cardinality.storage;
 
+import static com.gps.cardinality.utils.Maps.combineMaps;
+
+import com.gps.cardinality.utils.Timestamps;
+import com.gps.cardinality.utils.Timestamps.Intervals;
+
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.NavigableMap;
-import java.util.Set;
+import java.util.NavigableSet;
 import java.util.TreeMap;
-import java.util.TreeSet;
+import java.util.stream.IntStream;
 
 /**
  * Manages all in-memory data store column families.
@@ -37,88 +44,237 @@ import java.util.TreeSet;
  */
 public class Database {
 
-  private static String CF_RAW_DATA = "%s_cf_raw_data";
-  private static String CF_MONTHLY_DATA = "%s_cf_monthly_data_%s";
+  private static final String CF_SITE_ID = "site_id";
+  private static final String CF_INTERVAL_SIZE = "interval_size";
+  private static final String CF_INTERVAL_START = "interval_start";
+  private static final String CF_GUID = "guid";
+  private static final String CF_MONTH_START = "month_start";
+  private static final String CF_METRIC = "metric";
+  private static String CF_GUID_DATA = "%s_cf_guid_data";
+  private static String CF_MONTHLY_COUNTS = "%s_cf_monthly_data";
 
-  private Map<String, ColumnFamily> siteTables;
+  private Map<String, Map<String, ColumnFamily>> siteTables;
+  private Map<String, NavigableSet<String>> siteFeatures;
+  private Map<String, List<List<String>>> siteFeatureNameCombinations;
 
   public Database() {
     this.siteTables = new HashMap<>();
+    this.siteFeatures = new HashMap<>();
+    this.siteFeatureNameCombinations = new HashMap<>();
   }
 
   /**
-   * Scratchpad main for rapid development.
+   * Used to generate dynamic partition keys. Generates maps of all possible combinations
+   * (n!)/(k!(n-k)!) from the given feature key values. E.g. for key/values feature1=facebook.com"
+   * and feature2=/index.html of feature set feature1, feature2, feature3, feature4, this will
+   * generate:
    *
-   * TODO: remove
+   * [{feature1=, feature2=, feature3=, feature4=},
+   * {feature1=facebook.com, feature2=, feature3=, feature4=},
+   * {feature1=, feature2=/index.html, feature3=, feature4=},
+   * {feature1=facebook.com, feature2=/index.html, feature3=, feature4=}]
+   *
+   * @param allFeaturesNames
+   *     list of all supported site features
+   * @param featureNameCombinations
+   *     available combinations of feature names
+   * @param featureValues
+   *     feature values to be combined
+   * @return
    */
-  public static void main(String[] args) {
-    Database db = new Database();
-    db.createTables("site1", Set.of("feature1", "feature2"));
-    db.keyCombinations("site1", System.currentTimeMillis(), new TreeMap<>(
-        Map.of("feature1", "foo", "feature2", "bar", "feature3", "zoo", "feature4", "zaa")))
-        .stream().forEach(System.out::println);
+  List<Map<String, Object>> featureNameValueCombinations(
+      NavigableSet<String> allFeaturesNames,
+      List<List<String>> featureNameCombinations,
+      NavigableMap<String, String> featureValues) {
+    List<Map<String, Object>> ret = new ArrayList<>();
+    for (List<String> nameCombo : featureNameCombinations) {
+      Map<String, Object> nameValueCombo = new TreeMap<>();
+      for (String featureName : allFeaturesNames) {
+        if (!nameCombo.contains(featureName)) {
+          nameValueCombo.put(featureName, "");
+          continue;
+        }
+        if (nameCombo.contains(featureName) && featureValues.containsKey(featureName)) {
+          nameValueCombo.put(featureName, featureValues.get(featureName));
+          continue;
+        }
+        nameValueCombo = null;
+        break;
+      }
+      if (null != nameValueCombo) {
+        ret.add(nameValueCombo);
+      }
+    }
+    return ret;
   }
 
   /**
-   * Audo generates tables for a given site and set of supported features.
-   *
-   * TODO: finish
-   *
-   * @param siteId
-   * @param features
-   */
-  public void createTables(String siteId, Set<String> features) {
-    // TODO: fill placeholder method
-  }
-
-  /**
-   * Generates all possible key combinations (n!)/(k!(n-k)!) from the given key/values, sorted in
-   * natural ordering. E.g. for set feature1=foo, feature2=bar, feature3=zoo, feature4=zaa, this
-   * will generate:
+   * Used to generate dynamic partition keys. Generates lists of all possible combinations
+   * (n!)/(k!(n-k)!) from the given feature names. E.g. for set feature1, feature2, feature3,
+   * feature4, this will generate:
    *
    * <pre>
-   * site1:1541739316983:feature1=foo
-   * site1:1541739316983:feature1=foo:feature2=bar
-   * site1:1541739316983:feature1=foo:feature2=bar:feature3=zoo
-   * site1:1541739316983:feature1=foo:feature2=bar:feature3=zoo:feature4=zaa
-   * site1:1541739316983:feature1=foo:feature3=zoo
-   * site1:1541739316983:feature1=foo:feature4=zaa
-   * site1:1541739316983:feature2=bar
-   * site1:1541739316983:feature2=bar:feature3=zoo
-   * site1:1541739316983:feature2=bar:feature3=zoo:feature4=zaa
-   * site1:1541739316983:feature2=bar:feature4=zaa
-   * site1:1541739316983:feature3=zoo
-   * site1:1541739316983:feature3=zoo:feature4=zaa
-   * site1:1541739316983:feature4=zaa
+   * [feature1, , , ]
+   * [, feature2, , ]
+   * [, , feature3, ]
+   * [, , , feature4]
+   * [feature1, feature2, , ]
+   * [, feature2, feature3, ]
+   * [, , feature3, feature4]
+   * [feature1, feature2, feature3, ]
+   * [feature1, , feature3, ]
+   * [, feature2, feature3, feature4]
+   * [, feature2, , feature4]
+   * [feature1, feature2, feature3, feature4]
+   * [feature1, , , feature4]]
    * </pre>
    *
-   * @param siteId
-   *     the site id
-   * @param monthInterval
-   *     the interval start
-   * @param features
-   *     the key/values of the features
-   * @return all combinations of the specified features, sorted by natural order
+   * @param featureList
+   *     the ordered list of feature names
+   * @return all combinations of the specified features
    */
-  public Set<String> keyCombinations(
-      String siteId, long monthInterval, NavigableMap<String, String> features) {
-    Set<String> keyCombinations = new TreeSet<>();
-    String[] keyParts = features.entrySet().stream().map(e ->
-        String.format("%s=%s", e.getKey(), e.getValue())).toArray(String[]::new);
-    System.out.println(features);
-    for (int increment = 0; increment < keyParts.length; increment++) {
-      for (int j = 0 + increment; j < keyParts.length; j++) {
-        String adjacentKeys = "";
-        for (int i = j - increment; i <= j; i++) {
-          adjacentKeys = String.format("%s:%s", adjacentKeys, keyParts[i]);
+  List<List<String>> featureNameCombinations(NavigableSet<String> featureList) {
+    List<List<String>> featureCombinations = new ArrayList<>();
+
+    // Default combo is no features present
+    List<String> noFeaturesPresent = new ArrayList<>();
+    IntStream.range(0, featureList.size()).forEach(i -> noFeaturesPresent.add(""));
+    featureCombinations.add(noFeaturesPresent);
+
+    String[] orderedFeatures = featureList.toArray(new String[0]);
+    int numFeatures = orderedFeatures.length;
+    for (int increment = 0; increment < numFeatures; increment++) {
+      for (int j = increment; j < numFeatures; j++) {
+        List<String> adjacentKeys = new ArrayList<>();
+        for (int i = 0; i < j - increment; i++) {
+          adjacentKeys.add("");
         }
-        keyCombinations.add(String.format("%s:%s%s", siteId, monthInterval, adjacentKeys));
-        if (increment > 0) {
-          String distantKeys = String.format(":%s:%s", keyParts[j - increment], keyParts[j]);
-          keyCombinations.add(String.format("%s:%s%s", siteId, monthInterval, distantKeys));
+        for (int i = j - increment; i <= j; i++) {
+          adjacentKeys.add(orderedFeatures[i]);
+        }
+        for (int i = 0; i < numFeatures - j - 1; i++) {
+          adjacentKeys.add("");
+        }
+        featureCombinations.add(adjacentKeys);
+        if (increment > 1) {
+          List<String> distantKeys = new ArrayList<>();
+          for (int i = 0; i < j - increment; i++) {
+            distantKeys.add("");
+          }
+          distantKeys.add(orderedFeatures[j - increment]);
+          for (int i = 0; i < increment - 1; i++) {
+            distantKeys.add("");
+          }
+          distantKeys.add(orderedFeatures[j]);
+          for (int i = 0; i < numFeatures - j - 1; i++) {
+            distantKeys.add("");
+          }
+          featureCombinations.add(distantKeys);
         }
       }
     }
-    return keyCombinations;
+    return featureCombinations;
+  }
+
+  /**
+   * Records a single site event into two tables, one tracking guids and one
+   * tracking the monthly cardinality counts.
+   *
+   * @param siteId
+   *     the site to be tracked
+   * @param timestamp
+   *     the timestamp of the event
+   * @param guid
+   *     the guid of the visitor
+   * @param features
+   *     the features key/values
+   */
+  public void track(
+      String siteId, long timestamp, String guid, NavigableMap<String, String> features) {
+    Intervals intervals = Timestamps.getIntervals(timestamp);
+
+    List<Map<String, Object>> featureCombos = featureNameValueCombinations(
+        siteFeatures.get(siteId), siteFeatureNameCombinations.get(siteId), features);
+
+    featureCombos.forEach(fc -> {
+      Map<String, Object> rawTableKeys = combineMaps(
+          Map.of(CF_SITE_ID, siteId, CF_INTERVAL_SIZE, "month", CF_INTERVAL_START,
+              intervals.getMonthStart(), CF_GUID, guid), fc);
+      boolean unique = updateAndReportIfUnique(
+          getGuidDataTable(siteId), rawTableKeys, Map.of("visits", "visits+1"));
+
+      if (unique) {
+        Map<String, Object> countsTableKeys = combineMaps(
+            Map.of(CF_SITE_ID, siteId, CF_MONTH_START, intervals.getMonthStart()), fc);
+        getMonthlyCountsTable(siteId).update(
+            countsTableKeys,
+            Map.of(CF_METRIC, "month_unique", CF_INTERVAL_START, intervals.getMonthStart(),
+                "visits", "visits+1"));
+      }
+    });
+  }
+
+  /**
+   * Updates a table and reports if a previous record existed for that key. Used to track unique
+   * visits.
+   *
+   * @param cf
+   *     the table
+   * @param keys
+   *     the row key
+   * @param data
+   *     the data for the row
+   * @return true if the record is a new unique record, false if there was already an entry for
+   * that row key
+   */
+  private boolean updateAndReportIfUnique(
+      ColumnFamily cf, Map<String, Object> keys, Map<String, Object> data) {
+    boolean unique;
+    if (unique = !cf.updateIfExists(keys, data)) {
+      cf.update(keys, data);
+    }
+    return unique;
+  }
+
+  /**
+   * Auto generates tables for a given site and set of supported features.
+   *
+   * @param siteId
+   *     the site
+   * @param features
+   *     the names of features supported by the site
+   */
+  public void createTables(String siteId, NavigableSet<String> features) {
+    Map<String, ColumnFamily> tables = new HashMap<>();
+
+    // Raw data table
+    List<String> rawTableKeys = new ArrayList<>(features);
+    rawTableKeys.addAll(0, List.of(CF_SITE_ID, CF_INTERVAL_SIZE, CF_INTERVAL_START, CF_GUID));
+    ColumnDefinition rawDataDefinition = new ColumnDefinition(
+        rawTableKeys,
+        List.of());
+    String tableName = String.format(CF_GUID_DATA, siteId);
+    tables.put(tableName, new ColumnFamily(tableName, rawDataDefinition));
+
+    // Counts table
+    List<String> countsTableKeys = new ArrayList<>(features);
+    countsTableKeys.addAll(0, List.of(CF_SITE_ID, CF_MONTH_START));
+    ColumnDefinition countsDefinition = new ColumnDefinition(
+        countsTableKeys,
+        List.of(CF_METRIC, CF_INTERVAL_START));
+    tableName = String.format(CF_MONTHLY_COUNTS, siteId);
+    tables.put(tableName, new ColumnFamily(tableName, countsDefinition));
+
+    this.siteTables.put(siteId, tables);
+    this.siteFeatures.put(siteId, features);
+    this.siteFeatureNameCombinations.put(siteId, featureNameCombinations(features));
+  }
+
+  public ColumnFamily getGuidDataTable(String siteId) {
+    return this.siteTables.get(siteId).get(String.format(CF_GUID_DATA, siteId));
+  }
+
+  public ColumnFamily getMonthlyCountsTable(String siteId) {
+    return this.siteTables.get(siteId).get(String.format(CF_MONTHLY_COUNTS, siteId));
   }
 }
