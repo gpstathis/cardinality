@@ -50,4 +50,13 @@ public class TimestampsTest {
     assertEquals(toEpoch(2019, 1, 2), intervals.getDayStart());
   }
 
+  @Test
+  public void numsToEpoch() {
+    assertEquals(1541030400, toEpoch(2018, 11, 1));
+  }
+
+  @Test
+  public void stringToEpoch() {
+    assertEquals(1541030400, toEpoch("2018-11-01"));
+  }
 }

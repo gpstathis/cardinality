@@ -22,8 +22,11 @@
 
 package com.gps.cardinality.utils;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.time.ZoneOffset;
+import java.time.format.DateTimeFormatter;
 
 /**
  * Interval calculation helpers.
@@ -32,6 +35,8 @@ import java.time.ZoneOffset;
  * Created on: 2018-11-06
  */
 public class Timestamps {
+
+  private static DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
   /**
    * For a given timestamp, this method generates the timestamps for the corresponding month
@@ -69,6 +74,17 @@ public class Timestamps {
    */
   public static int toEpoch(int year, int month, int day) {
     return (int) LocalDateTime.of(year, month, day, 0, 0).toEpochSecond(ZoneOffset.UTC);
+  }
+
+  /**
+   * Generates a timestamp from the provided 'yyyy-MM-dd' formatted date.
+   *
+   * @param date
+   *     a 'yyyy-MM-dd' formatted date
+   * @return a corresponding unix epoch time
+   */
+  public static int toEpoch(String date) {
+    return (int) LocalDate.parse(date, formatter).toEpochSecond(LocalTime.of(0, 0), ZoneOffset.UTC);
   }
 
   public static class Intervals {
