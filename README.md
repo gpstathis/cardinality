@@ -18,53 +18,52 @@ TODO: discuss why Cassandra might be a good choice.
 
 ## Data Modeling
 
-### Raw data tables
+### Guid data tables
 
-Purpose: store the original raw requests to allow discerning uniqe visits vs. all page views.
+Purpose: track the guids encountered per selected time interval.
 
 Design goals:
 
-* Should allow to quickly find whether a given visitor `guid` has been seen for a given site on a given month, week or day..
+* Should allow to quickly find whether a given visitor `guid` has been seen for a given site on a given month and feature combination.
 
 If we were to model this as a Cassandra table, the schema might look like this:
 
 ```
-CREATE TABLE RawData (
+CREATE TABLE GuidData (
   siteId text,
-  month_interval_start timestamp,
+  interval_size text,
+  interval_start timestamp,
   guid text,
-  week_interval_start timestamp,
-  day_interval_start timestamp,
-  timestamp timestamp,
   feature1 text,
   feature2 text,
   PRIMARY KEY (
-      (siteId, month_interval_start, guid),
-      week_interval_start, day_interval_start, timestamp
+      (siteId, interval_size, interval_start, guid, feature1, feature2)
       )
   );
 ```
 
-The composite partition key helps quickly locate single rows for a visitor's monthly activity on a given site. If such row doesn't already exist, then this is a new unique visitor for that month. Similarly, the week, day and timestamp clustering keys help sort monthly visits such that we can quickly scan looking for specific week or day. The absence of columns for a given week or day signals a unique visit from that `guid`.
+The composite partition key helps quickly locate single rows for a visitor's monthly activity on a given site and for a given feature value combination. If such row doesn't already exist, then this visit for this combination for features is unique for that month.
 
 E.g.
 
 ```
-          site id     month      guid
-                |     |          |
-Partition Key: 'site1:1530403200:acd9cc5b-165b-4d5d-bbcc-50c840038b63'
-           week       day        timestamp  feature name      feature value
-           |          |          |          |                 |
-=>(column='1530489600:1530835200:1530895602:feature1', value='facebook.com')
-=>(column='1530489600:1530835200:1530895602:feature2', value='/index.html')
-=>(column='1531699200:1532044800:1532103123:feature1', value='facebook.com')
-=>(column='1531699200:1532044800:1532103123:feature2', value='/product_74.html')
+          interval type     interval start
+          site id     |     |          guid             feature combinations
+                |     |     |          |                                   |  
+Partition Key: 'site1:month:1530403200:acd9cc5b-165b-4d5d-bbcc-50c840038b63:::'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1530403200:acd9cc5b-165b-4d5d-bbcc-50c840038b63:facebook.com::'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1530403200:acd9cc5b-165b-4d5d-bbcc-50c840038b63::/index.html:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1530403200:acd9cc5b-165b-4d5d-bbcc-50c840038b63:facebook.com:/index.html:'
+=>(column='visits', value='1')
 [...]
 ```
 
 ### Count tables
 
-Purpose: store the monthly, weekly and daily visit counts for each site, for every combination of feature values.
+Purpose: store the monthly unique visit counts for each site, for every combination of feature values.
 
 Design goals:
 
@@ -93,21 +92,16 @@ E.g.
           site id     month      feature1     empty feature2
                 |     |          |            |
 Partition Key: 'site1:1530403200:facebook.com:'
-           metric    interval start      counter
-           |         |                   |
-=>(column='day_total:1530403200', value='1')
+           metric    interval start             counter
+           |         |                          |
+=>(column='day_unique:1530403200:visits', value='1')
 [...]
-=>(column='day_total:1532476800', value='1')
+=>(column='day_unique:1532476800:visits', value='1')
+=>(column='month_unique:1530403200:visits', value='13')
 [...]
-=>(column='day_unique:1532476800', value='1')
-=>(column='month_total:1530403200', value='19')
-=>(column='month_unique:1530403200', value='13')
-=>(column='week_total:1529884800', value='1')
+=>(column='week_unique:1529884800:visits', value='1')
 [...]
-=>(column='week_total:1532304000', value='1')
-=>(column='week_unique:1529884800', value='1')
-[...]
-=>(column='week_unique:1532304000', value='1')
+=>(column='week_unique:1532304000:visits', value='1')
 ```
 
 ## Project Requirements
