@@ -28,7 +28,8 @@ task customFatJar(type: Jar) {
     manifest {
         attributes 'Main-Class': 'com.gps.cardinality.Cardinality'
     }
-    baseName = 'all-in-one-jar'
+    baseName = 'cardinality'
+    version = ''
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
     with jar
 }

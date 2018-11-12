@@ -47,7 +47,7 @@ import picocli.CommandLine.Command;
  * @author gstathis
  * Created on: 2018-11-05
  */
-@Command(name = "cardinality",
+@Command(name = "java -jar build/libs/cardinality.jar",
     mixinStandardHelpOptions = true,
     version = "Cardinality by George Stathis, v1")
 public class Cardinality implements Runnable {
