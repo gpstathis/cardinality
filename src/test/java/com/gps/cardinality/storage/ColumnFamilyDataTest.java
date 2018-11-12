@@ -109,12 +109,12 @@ public class ColumnFamilyDataTest {
   @Test
   public void counterTest() {
     ColumnFamilyData data = new ColumnFamilyData();
-    assertNull(data.put("testkey", "testkey+1"));
-    assertEquals("=>(column='testkey', value='1')\n", data.toString());
-    assertEquals(1, data.put("testkey", "testkey+9"));
-    assertEquals("=>(column='testkey', value='10')\n", data.toString());
-    assertEquals(10, data.put("testkey", "testkey-5"));
-    assertEquals("=>(column='testkey', value='5')\n", data.toString());
+    assertNull(data.put("testCol:testField", "testField+1"));
+    assertEquals("=>(column='testCol:testField', value='1')\n", data.toString());
+    assertEquals(1, data.put("testCol:testField", "testField+9"));
+    assertEquals("=>(column='testCol:testField', value='10')\n", data.toString());
+    assertEquals(10, data.put("testCol:testField", "testField-5"));
+    assertEquals("=>(column='testCol:testField', value='5')\n", data.toString());
   }
 
   @Test(expected = RuntimeException.class)
@@ -126,24 +126,24 @@ public class ColumnFamilyDataTest {
 
   @Test
   public void counterExpressionMatchTest() {
-    assertFalse(ColumnFamilyData.isCounter("testkey", "testValue").isMatch());
+    assertFalse(ColumnFamilyData.isCounter("testCol:testField", "testValue").isMatch());
 
-    CounterMatch m = ColumnFamilyData.isCounter("testkey", "testkey+1");
+    CounterMatch m = ColumnFamilyData.isCounter("testCol:testField", "testField+1");
     assertTrue(m.isMatch());
     assertEquals("+", m.getOp());
     assertEquals(Integer.valueOf(1), m.getInc());
 
-    m = ColumnFamilyData.isCounter("testkey", "testkey + 3124");
+    m = ColumnFamilyData.isCounter("testCol:testField", "testField + 3124");
     assertTrue(m.isMatch());
     assertEquals("+", m.getOp());
     assertEquals(Integer.valueOf(3124), m.getInc());
 
-    m = ColumnFamilyData.isCounter("testkey", "testkey - 32");
+    m = ColumnFamilyData.isCounter("testCol:testField", "testField - 32");
     assertTrue(m.isMatch());
     assertEquals("-", m.getOp());
     assertEquals(Integer.valueOf(32), m.getInc());
 
-    m = ColumnFamilyData.isCounter("testkey", "testkey -4");
+    m = ColumnFamilyData.isCounter("testCol:testField", "testField -4");
     assertTrue(m.isMatch());
     assertEquals("-", m.getOp());
     assertEquals(Integer.valueOf(4), m.getInc());

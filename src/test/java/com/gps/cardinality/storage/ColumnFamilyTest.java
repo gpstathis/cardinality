@@ -45,77 +45,67 @@ public class ColumnFamilyTest {
     ColumnFamily data = new ColumnFamily("testTable", definition);
     // Insert separate keys and values
     data.update(
-        Map.of("partitionKey1", "partitionVal1",
-            "partitionKey2", "partitionVal2",
-            "clusterKey1", "clusterVal1",
-            "clusterKey2", "clusterVal2"),
-        Map.of("normalField1", "normalVal1",
-            "normalField2", 5));
-    // Partition key and clustering keys should be automatically set
-    assertEquals("Column Family: 'testTable'\n"
-                 + "Partition Key: 'partitionVal1:partitionVal2'\n"
-                 + "=>(column='clusterVal1:clusterVal2:normalField1', value='normalVal1')\n"
-                 + "=>(column='clusterVal1:clusterVal2:normalField2', value='5')\n"
-        , data.toString());
+        Map.of("partitionKey1", "partitionVal1", "partitionKey2", "partitionVal2"),
+        Map.of("clusterKey1", "clusterVal1", "clusterKey2", "clusterVal2", "normalField1",
+            "normalVal1", "normalField2",
+            5));/* Partition key and clustering keys should be automatically set*/
+    assertEquals(
+        "Column Family: 'testTable'\nPartition Key: 'partitionVal1:partitionVal2'\n=>"
+        + "(column='clusterVal1:clusterVal2:normalField1', value='normalVal1')\n=>"
+        + "(column='clusterVal1:clusterVal2:normalField2', value='5')\n",
+        data.toString());
   }
 
   @Test
   public void updateIfExistsTest() {
     ColumnDefinition definition = new ColumnDefinition(List.of("pKey"), List.of());
     ColumnFamily data = new ColumnFamily("testTable", definition);
-    assertFalse(data.updateIfExists(
-        Map.of("pKey", "pVal"),
-        Map.of("colKey1", "colVal1")));
+    assertFalse(
+        data.updateIfExists(Map.of("pKey", "pVal"), Map.of("colKey1", "colVal1")));
     data.update(Map.of("pKey", "pVal"), Map.of("colKey1", "colVal1"));
-    assertTrue(data.updateIfExists(
-        Map.of("pKey", "pVal"),
-        Map.of("colKey2", "colVal2")));
+    assertTrue(data.updateIfExists(Map.of("pKey", "pVal"), Map.of("colKey2", "colVal2")));
   }
 
   @Test
   public void selectOneTest() {
     ColumnDefinition definition = new ColumnDefinition(List.of("pKey"), List.of("clusterKey"));
     ColumnFamily data = new ColumnFamily("testTable", definition);
-    Map<String, Object> keys = Map.of("pKey", "pVal", "clusterKey", "clusterVal");
-    data.update(keys, Map.of("colKey1", "colVal1"));
-    data.update(keys, Map.of("colKey2", "colVal2"));
-    data.update(keys, Map.of("colKey3", "colVal3"));
-    data.update(keys, Map.of("colKey4", "colVal4"));
-    data.update(keys, Map.of("colKey5", "colVal5"));
-    assertEquals("colVal3", data.selectOne(keys, "colKey3"));
+    Map<String, Object> keys = Map.of("pKey", "pVal");
+    data.update(keys, Map.of("clusterKey", "clusterVal", "colKey1", "colVal1"));
+    data.update(keys, Map.of("clusterKey", "clusterVal", "colKey2", "colVal2"));
+    data.update(keys, Map.of("clusterKey", "clusterVal", "colKey3", "colVal3"));
+    data.update(keys, Map.of("clusterKey", "clusterVal", "colKey4", "colVal4"));
+    data.update(keys, Map.of("clusterKey", "clusterVal", "colKey5", "colVal5"));
+    assertEquals("colVal3", data.selectOne(keys, Map.of("clusterKey", "clusterVal", "colKey3", "")));
   }
 
   @Test
   public void selectRangeTest() {
-    ColumnDefinition definition = new ColumnDefinition(List.of("pKey"), List.of("clusterKey"));
+    ColumnDefinition definition = new ColumnDefinition(List.of("pKey"), List.of(
+        "metric",
+        "interval_start"));
     ColumnFamily data = new ColumnFamily("testTable", definition);
-    Map<String, Object> keys = Map.of("pKey", "pVal", "clusterKey", "clusterVal");
-    data.update(keys, Map.of("day_total_1535846400", 1));
-    data.update(keys, Map.of("day_total_1535932800", 1));
-    data.update(keys, Map.of("day_total_1536364800", 1));
-    data.update(keys, Map.of("day_total_1536451200", 1));
-    data.update(keys, Map.of("day_total_1536537600", 1));
-    data.update(keys, Map.of("day_total_1536710400", 1));
-    data.update(keys, Map.of("day_total_1537142400", 1));
-    data.update(keys, Map.of("day_total_1537488000", 1));
-    data.update(keys, Map.of("day_total_1537574400", 1));
-    data.update(keys, Map.of("day_total_1537660800", 5));
-    data.update(keys, Map.of("day_total_1538092800", 1));
-    data.update(keys, Map.of("day_total_", 0));
-    data.update(keys, Map.of("day_total_end", 0));
+    Map<String, Object> keys = Map.of("pKey", "pVal");
+    data.update(keys, Map.of("metric", "day_total", "interval_start", "1535846400", "value", 1));
+    data.update(keys, Map.of("metric", "day_total", "interval_start", "1535932800", "value", 1));
+    data.update(keys, Map.of("metric", "day_total", "interval_start", "1536364800", "value", 1));
+    data.update(keys, Map.of("metric", "day_total", "interval_start", "1536451200", "value", 1));
+    data.update(keys, Map.of("metric", "day_total", "interval_start", "1536537600", "value", 1));
+    data.update(keys, Map.of("metric", "day_total", "interval_start", "1536710400", "value", 1));
+    data.update(keys, Map.of("metric", "day_total", "interval_start", "1537142400", "value", 1));
+    data.update(keys, Map.of("metric", "day_total", "interval_start", "1537488000", "value", 1));
+    data.update(keys, Map.of("metric", "day_total", "interval_start", "1537574400", "value", 1));
+    data.update(keys, Map.of("metric", "day_total", "interval_start", "1537660800", "value", 5));
+    data.update(keys, Map.of("metric", "day_total", "interval_start", "1538092800", "value", 1));
     assertEquals(
-        "{clusterVal:day_total_1535846400=1, "
-        + "clusterVal:day_total_1535932800=1, "
-        + "clusterVal:day_total_1536364800=1, "
-        + "clusterVal:day_total_1536451200=1, "
-        + "clusterVal:day_total_1536537600=1, "
-        + "clusterVal:day_total_1536710400=1, "
-        + "clusterVal:day_total_1537142400=1, "
-        + "clusterVal:day_total_1537488000=1, "
-        + "clusterVal:day_total_1537574400=1, "
-        + "clusterVal:day_total_1537660800=5, "
-        + "clusterVal:day_total_1538092800=1}",
-        data.selectRange(keys, "day_total_", "day_total_end").toString());
+        "{day_total:1535846400:value=1, day_total:1535932800:value=1, "
+        + "day_total:1536364800:value=1, day_total:1536451200:value=1, "
+        + "day_total:1536537600:value=1, day_total:1536710400:value=1, "
+        + "day_total:1537142400:value=1, day_total:1537488000:value=1, "
+        + "day_total:1537574400:value=1, day_total:1537660800:value=5, "
+        + "day_total:1538092800:value=1}",
+        data.selectRange(keys, Map.of("metric", "day_total", "interval_start", "-1"),
+            Map.of("metric", "day_total", "interval_start", "∞")).toString());
   }
 
 }

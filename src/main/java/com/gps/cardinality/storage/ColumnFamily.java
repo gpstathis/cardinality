@@ -26,6 +26,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * Cassandra inspired data structure for storing partitions or ordered key/values.
@@ -39,27 +40,31 @@ public class ColumnFamily {
   private ColumnDefinition columnDefinition;
   private Map<String, ColumnFamilyData> data;
 
-  public ColumnFamily(String name, ColumnDefinition columnDefinition) {
+  ColumnFamily(String name, ColumnDefinition columnDefinition) {
     this.name = name;
     this.columnDefinition = columnDefinition;
     this.data = new HashMap<>();
   }
 
   /**
-   * Updates a single record or creates a new one if none ecists (upsert).
+   * Updates a single record or creates a new one if none exists (upsert).
    *
    * @param keys
-   *     the partitioning and clustering keys
+   *     the partitioning keys
    * @param data
-   *     the data
+   *     the data (clustering keys must be present)
    */
-  public void update(Map<String, Object> keys, Map<String, Object> data) {
+  void update(
+      Map<String, Object> keys, Map<String, Object> data) {
     String partitionKey = buildCompositeKey(keys, this.columnDefinition.getCompositeKeys());
-    String clusteringKey = buildCompositeKey(keys, this.columnDefinition.getClusteringKeys());
+    String clusteringKey = buildCompositeKey(data, this.columnDefinition.getClusteringKeys());
     clusteringKey = clusteringKey.isBlank() ? "" : clusteringKey.concat(":");
 
     Map<String, Object> prefixedKeyValues = new HashMap<>();
     for (Map.Entry<String, Object> keyValue : data.entrySet()) {
+      if (this.columnDefinition.getClusteringKeys().contains(keyValue.getKey())) {
+        continue;
+      }
       String newKey = clusteringKey.concat(keyValue.getKey());
       prefixedKeyValues.put(newKey, keyValue.getValue());
     }
@@ -70,12 +75,12 @@ public class ColumnFamily {
    * Updates a single record only if it already exists.
    *
    * @param keys
-   *     the partitioning and clustering keys
+   *     the partitioning keys
    * @param data
-   *     the data
+   *     the data (clustering keys must be present)
    * @return true if the record was updated, false if no matching record was found
    */
-  public Boolean updateIfExists(Map<String, Object> keys, Map<String, Object> data) {
+  Boolean updateIfExists(Map<String, Object> keys, Map<String, Object> data) {
     String partitionKey = buildCompositeKey(keys, this.columnDefinition.getCompositeKeys());
     if (this.data.containsKey(partitionKey)) {
       update(keys, data);
@@ -89,16 +94,19 @@ public class ColumnFamily {
    * Selects a single record.
    *
    * @param keys
-   *     the partitioning and clustering keys
-   * @param column
-   *     the data column name
+   *     the partitioning keys
+   * @param columns
+   *     the column names and values from which to select
    * @return the column value
    */
-  public Object selectOne(Map<String, Object> keys, String column) {
+  Object selectOne(Map<String, Object> keys, Map<String, Object> columns) {
     String partitionKey = buildCompositeKey(keys, this.columnDefinition.getCompositeKeys());
-    String clusteringKey = buildCompositeKey(keys, this.columnDefinition.getClusteringKeys());
+    String clusteringKey = buildCompositeKey(columns, this.columnDefinition.getClusteringKeys());
     clusteringKey = clusteringKey.isBlank() ? "" : clusteringKey.concat(":");
-    return data.get(partitionKey).get(clusteringKey.concat(column));
+    List<String> fields = columns.entrySet().stream()
+        .filter(e -> !this.columnDefinition.getClusteringKeys().contains(e.getKey()))
+        .map(Map.Entry::getKey).collect(Collectors.toList());
+    return data.get(partitionKey).get(clusteringKey.concat(String.join(":", fields)));
   }
 
   /**
@@ -106,20 +114,22 @@ public class ColumnFamily {
    *
    * @param keys
    *     the partitioning and clustering keys
+   * @param whereColumns
+   *     column values to filter down range
    * @param fromColumn
-   *     the starting column name
+   *     the starting column name for the range
    * @param toColumn
-   *     the end column name
+   *     the end column name for the range
    * @return the sorted key/values of the matching colunm range.
    */
-  public Map<String, Object> selectRange(
-      Map<String, Object> keys, String fromColumn,
-      String toColumn) {
+  Map<String, Object> selectRange(
+      Map<String, Object> keys, Map<String, Object> fromColumns, Map<String, Object> toColumns) {
     String partitionKey = buildCompositeKey(keys, this.columnDefinition.getCompositeKeys());
-    String clusteringKey = buildCompositeKey(keys, this.columnDefinition.getClusteringKeys());
-    clusteringKey = clusteringKey.isBlank() ? "" : clusteringKey.concat(":");
-    return data.get(partitionKey).getRange(clusteringKey.concat(fromColumn),
-        false, clusteringKey.concat(toColumn), false);
+    String from = buildCompositeKey(fromColumns, this.columnDefinition.getClusteringKeys());
+    from = from.isBlank() ? "" : from.concat(":");
+    String to = buildCompositeKey(toColumns, this.columnDefinition.getClusteringKeys());
+    to = to.isBlank() ? "" : to.concat(":");
+    return data.get(partitionKey).getRange(from, false, to, false);
   }
 
   /**

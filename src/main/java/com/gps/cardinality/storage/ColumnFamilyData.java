@@ -64,7 +64,7 @@ public class ColumnFamilyData {
    */
   static CounterMatch isCounter(String key, Object value) {
     int pos = key.lastIndexOf(":");
-    String fieldName = key.substring(pos < 0 ? 0 : pos);
+    String fieldName = key.substring(pos < 0 ? 0 : pos+1);
     Matcher m =
         Pattern.compile("(" + fieldName + ")(\\s*)(\\+|-)(\\s*)(\\d+)").matcher(value.toString());
     if (m.matches()) {
