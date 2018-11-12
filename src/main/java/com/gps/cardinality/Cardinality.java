@@ -22,16 +22,19 @@
 
 package com.gps.cardinality;
 
-import com.gps.cardinality.storage.ColumnDefinition;
-import com.gps.cardinality.storage.ColumnFamily;
-import com.gps.cardinality.utils.DataGenerator;
-import com.gps.cardinality.utils.Throttle;
-import com.gps.cardinality.utils.Timestamps;
-import com.gps.cardinality.utils.Timestamps.Intervals;
+import static com.gps.cardinality.utils.DataGenerator.generateUUIDs;
+import static com.gps.cardinality.utils.Timestamps.toEpoch;
 
-import java.util.HashMap;
+import com.gps.cardinality.storage.Database;
+import com.gps.cardinality.utils.DataGenerator;
+import com.gps.cardinality.utils.DataGenerator.GeneratedData;
+import com.gps.cardinality.utils.Throttle;
+
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
+import java.util.TreeSet;
+import java.util.UUID;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
 
@@ -43,33 +46,15 @@ import java.util.stream.Stream;
  */
 public class Cardinality {
 
-  private static String CF_RAW_DATA = "cf_raw_data";
-  private static String CF_MONTH_ALL = "cf_month_all";
-  private Map<String, ColumnFamily> keySpace;
+  private Database db;
 
   private Cardinality() {
-    defineColumnFamilies();
+    db = new Database();
   }
 
   public static void main(String[] args) {
     Cardinality cardinality = new Cardinality();
-    cardinality.run();
-  }
-
-  /**
-   * Scratchpad for rapid development.
-   *
-   * TODO: remove
-   */
-  private void defineColumnFamilies() {
-    keySpace = new HashMap<>();
-    ColumnDefinition definition = new ColumnDefinition(
-        List.of("site", "month_interval_start", "guid"),
-        List.of("week_interval_start", "day_interval_start", "timestamp"));
-    keySpace.put(CF_RAW_DATA, new ColumnFamily(CF_RAW_DATA, definition));
-
-    definition = new ColumnDefinition(List.of("site", "month_interval_start"), List.of());
-    keySpace.put(CF_MONTH_ALL, new ColumnFamily(CF_MONTH_ALL, definition));
+    cardinality.run("site1");
   }
 
   /**
@@ -78,37 +63,20 @@ public class Cardinality {
    *
    * TODO: remove
    */
-  private void run() {
-    Supplier<DataGenerator.GeneratedData> randomDataSupplier = () -> DataGenerator
-        .generate(1530403200, 1538352000, Throttle.create(100));
-    Stream.generate(randomDataSupplier).limit(50).forEach(data -> {
-
-      Intervals intervals = Timestamps.getIntervals(data.timestamp);
-      Map<String, Object> keys = Map
-          .of("site", "site1",
-              "month_interval_start", intervals.getMonthStart(),
-              "guid", data.guid,
-              "week_interval_start", intervals.getWeekStart(),
-              "day_interval_start", intervals.getDayStart(),
-              "timestamp", data.timestamp);
-      Map<String, Object> values = Map.of("feature1", data.feature1, "feature2", data.feature2);
-
-      boolean unique = true;
-      if (unique = !keySpace.get(CF_RAW_DATA).updateIfExists(keys, values)) {
-        keySpace.get(CF_RAW_DATA).update(keys, values);
-      }
-
-      keys = Map
-          .of("site", "site1",
-              "month_interval_start", intervals.getMonthStart());
-      values = Map.of("month_total", "month_total+1", "month_unique", "month_unique+" + (unique ? 1 : 0),
-          String.format("week_total_%d", intervals.getWeekStart()),
-          String.format("week_total_%d+1", intervals.getWeekStart()),
-          String.format("day_total_%d", intervals.getDayStart()),
-          String.format("day_total_%d+1", intervals.getDayStart()));
-      keySpace.get(CF_MONTH_ALL).update(keys, values);
+  private void run(String siteId) {
+    db.createTables(siteId, new TreeSet<>(List.of("feature1", "feature2")));
+    List<UUID> guids = generateUUIDs(50);
+    Supplier<GeneratedData> randomDataSupplier = () -> DataGenerator
+        .generate(guids, List.of("facebook.com", "google.com"),
+            List.of("/index.html", "/product1.html"),
+            toEpoch(2018, 10, 1),
+            toEpoch(2018, 11, 1), Throttle.create(100));
+    Stream.generate(randomDataSupplier).limit(100).forEach(data -> {
+      db.track(
+          siteId, data.timestamp, data.guid,
+          new TreeMap<>(Map.of("feature1", data.feature1, "feature2", data.feature2)));
     });
-    System.out.println(keySpace.get(CF_RAW_DATA));
-    System.out.println(keySpace.get(CF_MONTH_ALL));
+    System.out.println(db.getGuidDataTable(siteId));
+    System.out.println(db.getMonthlyCountsTable(siteId));
   }
 }

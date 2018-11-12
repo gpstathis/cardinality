@@ -67,8 +67,8 @@ public class Timestamps {
    *     the day
    * @return a corresponding unix epoch time
    */
-  public static long toEpoch(int year, int month, int day) {
-    return LocalDateTime.of(year, month, day, 0, 0).toEpochSecond(ZoneOffset.UTC);
+  public static int toEpoch(int year, int month, int day) {
+    return (int) LocalDateTime.of(year, month, day, 0, 0).toEpochSecond(ZoneOffset.UTC);
   }
 
   public static class Intervals {
