@@ -165,7 +165,7 @@ Usage: java -jar build/libs/cardinality.jar [-hV] -f=<from> -g=<numGuids>
   -V, --version            Print version information and exit.
 ```
 
-## Executing a sample run and virfying the counts
+## Executing a sample run and verifying the counts
 
 The following run simulates 500 visits from 100 unique visitors to a site with id `site1` in the month of October 2018, distributed among three different landing pages:
 
