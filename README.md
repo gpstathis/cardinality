@@ -107,17 +107,13 @@ Partition Key: 'site1:1530403200:facebook.com:'
            metric       interval start             counter
            |            |                          |
 =>(column='month_unique:1530403200:visits', value='13')
-          site id     month      feature1     feature2
-                |     |          |            |
+                                 feature1     feature2
+                                 |            |
 Partition Key: 'site1:1530403200:facebook.com:/index.html'
-           metric       interval start             counter
-           |            |                          |
 =>(column='month_unique:1530403200:visits', value='5')
-          site id     month       feature2 only
-                |     |           |            
+                      feature2 only
+                                  |            
 Partition Key: 'site1:1530403200::/index.html'
-           metric       interval start             counter
-           |            |                          |
 =>(column='month_unique:1530403200:visits', value='15')
 [...]
 ```
@@ -132,6 +128,8 @@ Note that the clustering keys sort the columns by unique counts for the month bu
 * Gradle
 
 ## Building Fat Jar
+
+Run this first to build a jar file. It will be located in `build/libs/cardinality.jar`.
 
 ```
 $ gradle clean customFatJar
@@ -166,6 +164,55 @@ Usage: java -jar build/libs/cardinality.jar [-hV] -f=<from> -g=<numGuids>
                              the random timestamps should stop
   -V, --version            Print version information and exit.
 ```
+
+## Sample run
+
+The following run simulates 500 visits from 100 unique visitors to a site with id `site1` in the month of October 2018, distributed among three different landing pages:
+
+```
+$ java -jar build/libs/cardinality.jar -s site1 -g 100 -r facebook.com google.com -p /index.html /index2.html /index3.html -f 2018-10-01 -t 2018-11-01 -n 500
+Simulation complete. Check 1542082422933_site1_tables.txt and 1542082422933_site1_visits.csv for results.
+```
+Each run outputs two files:
+
+* a `{timestamp}_{site_id}_tables.txt` file where the `guid` visits and counts tables are output as text
+* a `{timestamp}_{site_id}_visits.csv` file where the visit data was recorded
+
+You can find the files under the `samples` directory. The counts table for the sample was:
+
+```
+Column Family: 'site1_cf_monthly_data'
+Partition Key: 'site1:1538352000::'
+=>(column='month_unique:1538352000:visits', value='100')
+Partition Key: 'site1:1538352000:google.com:/index3.html'
+=>(column='month_unique:1538352000:visits', value='56')
+Partition Key: 'site1:1538352000:facebook.com:/index.html'
+=>(column='month_unique:1538352000:visits', value='54')
+Partition Key: 'site1:1538352000::/index2.html'
+=>(column='month_unique:1538352000:visits', value='81')
+Partition Key: 'site1:1538352000:facebook.com:/index2.html'
+=>(column='month_unique:1538352000:visits', value='63')
+Partition Key: 'site1:1538352000:google.com:/index.html'
+=>(column='month_unique:1538352000:visits', value='53')
+Partition Key: 'site1:1538352000:google.com:/index2.html'
+=>(column='month_unique:1538352000:visits', value='52')
+Partition Key: 'site1:1538352000:facebook.com:'
+=>(column='month_unique:1538352000:visits', value='92')
+Partition Key: 'site1:1538352000::/index3.html'
+=>(column='month_unique:1538352000:visits', value='78')
+Partition Key: 'site1:1538352000:facebook.com:/index3.html'
+=>(column='month_unique:1538352000:visits', value='56')
+Partition Key: 'site1:1538352000:google.com:'
+=>(column='month_unique:1538352000:visits', value='96')
+Partition Key: 'site1:1538352000::/index.html'
+=>(column='month_unique:1538352000:visits', value='78')
+```
+
+To verify the numbers, we uploaded the accompanying CSV to Google Sheets (see https://docs.google.com/spreadsheets/d/13P8CtUyHm6PBHNqa09xhEA4RyUiAA_1lusfg71IP6wg/edit#gid=1892714881) and created a Pivot Table:
+
+<img src="https://github.com/gpstathis/cardinality/blob/master/samples/pivot_table_screenie.png?raw=true" width="400">
+
+For instance, we can see both in the the counts rable row `site1:1538352000:facebook.com:` and in the pivot table that the unique number of visits where `feature1` is `facebook.com` in the month of October was 92.
 
 ## Running Tests
 
