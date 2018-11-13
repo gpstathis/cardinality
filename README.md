@@ -12,9 +12,13 @@ guid=962e0c3a-6c08-4160-9196-f0050faffe62&timestamp=1522802128&feature1=facebook
 
 The challenge is to figure out a scalable solution to keeping track of all this information across thousands of sites, each with tens of millions of page views a month across millions of unique visitors and be able to answer question such as "how many people visited my website this month where feature1 is 'facebook.com'" in real-time. There are critical design choices -- both storage engine and data modeling -- that can have significant impacts on how the throughput and storage costs will scale as the system grows.
 
+## Project Goals
+
+This project is a simple command line simulation that generates mock visitor data and tracks it in-memory. It is a data modeling demo of what a possible tracking solution could be.
+
 ## Storage Engine
 
-The target storage engine in this example is Apache Cassandra. Cassandra is a good candidate for this type of use case and the workload it entails due to the following reasons:
+The target storage engine in this example would be Apache Cassandra. Cassandra is a good candidate for this type of use case and the workload it entails due to the following reasons:
 
 * Cassandra is built for fast writes: it's built as an append-only log where all writes are done sequentially. That implies a lower write latency. Cassandra also partitions the key space allowing for machines to write in parallel, achieving higher write throughputs. Large organizations such a Netflix have posted write ups demonstrating the type of write speeds that can be seen at scale: https://medium.com/netflix-techblog/revisiting-1-million-writes-per-second-c191a84864cc
 * It can handle very large data sets
