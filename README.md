@@ -165,7 +165,7 @@ Usage: java -jar build/libs/cardinality.jar [-hV] -f=<from> -g=<numGuids>
   -V, --version            Print version information and exit.
 ```
 
-## Sample run
+## Executing a sample run and virfying the counts
 
 The following run simulates 500 visits from 100 unique visitors to a site with id `site1` in the month of October 2018, distributed among three different landing pages:
 
@@ -178,7 +178,7 @@ Each run outputs two files:
 * a `{timestamp}_{site_id}_tables.txt` file where the `guid` visits and counts tables are output as text
 * a `{timestamp}_{site_id}_visits.csv` file where the visit data was recorded
 
-You can find the files under the `samples` directory. The counts table for the sample was:
+You can find the files for the above sample run under the `samples` directory in this repository. The counts table for the sample was:
 
 ```
 Column Family: 'site1_cf_monthly_data'
@@ -212,7 +212,7 @@ To verify the numbers, we uploaded the accompanying CSV to Google Sheets (see ht
 
 <img src="https://github.com/gpstathis/cardinality/blob/master/samples/pivot_table_screenie.png?raw=true" width="400">
 
-For instance, we can see both in the the counts rable row `site1:1538352000:facebook.com:` and in the pivot table that the unique number of visits where `feature1` is `facebook.com` in the month of October was 92.
+We can then compare the unique counts for any combination of features. For instance, we can see both in the counts rable row `site1:1538352000:facebook.com:/index3.html` and in the pivot table that the unique number of visitors where `feature1` is `facebook.com` and `feature2` is `/index3.html` in the month of October was 56.
 
 ## Running Tests
 
