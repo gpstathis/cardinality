@@ -69,6 +69,10 @@ Partition Key: 'site1:month:1530403200:acd9cc5b-165b-4d5d-bbcc-50c840038b63:face
 [...]
 ```
 
+Note that the rows in this table grow increasingly large with each site feature tracked. Each visit results in one write for the `guid` alone and `N` writes for each combination `(n!)/(k!(n-k)!)` of features, where `n` is the total number of features and `k` is the number of features to combine at a time. While this may seem wasteful at first, it leverages two of Cassandra's core features: fast writes and large data set ingestion. So we opt to incur several writes per visit and to pre-compute and store every combination of feature at write time to speed up reads.
+
+Note also that if storage is an issue, a table per month can be created and dropped once the cardinality numbers have been obtained (see next section for Count tables). The raw logs from the visits, which are smaller in size, can be kept in cold storage if needed and replayed back to re-build the table if necessary.
+
 ### Count tables
 
 Purpose: store the monthly unique visit counts for each site, for every combination of feature values.
@@ -92,7 +96,7 @@ CREATE TABLE Counts (
   );
 ```
 
-This schema helps quickly answer questions such as how many unique visits were there for a given site and month (or week or day) where `feature1` is 'facebook.com'. The composite partition key helps fetch the columns for a give site, month and feature value combination. The clustering keys sort the columns by total or unique counts for the month, week or day.
+This schema helps quickly answer questions such as how many unique visits were there for a given site and month where `feature1` is 'facebook.com'. The composite partition key helps fetch the columns for a given site, month and feature value combination. 
 
 E.g.
 
@@ -100,17 +104,27 @@ E.g.
           site id     month      feature1     empty feature2
                 |     |          |            |
 Partition Key: 'site1:1530403200:facebook.com:'
-           metric    interval start             counter
-           |         |                          |
-=>(column='day_unique:1530403200:visits', value='1')
-[...]
-=>(column='day_unique:1532476800:visits', value='1')
+           metric       interval start             counter
+           |            |                          |
 =>(column='month_unique:1530403200:visits', value='13')
+          site id     month      feature1     feature2
+                |     |          |            |
+Partition Key: 'site1:1530403200:facebook.com:/index.html'
+           metric       interval start             counter
+           |            |                          |
+=>(column='month_unique:1530403200:visits', value='5')
+          site id     month       feature2 only
+                |     |           |            
+Partition Key: 'site1:1530403200::/index.html'
+           metric       interval start             counter
+           |            |                          |
+=>(column='month_unique:1530403200:visits', value='15')
 [...]
-=>(column='week_unique:1529884800:visits', value='1')
-[...]
-=>(column='week_unique:1532304000:visits', value='1')
 ```
+
+Records in this table are pupulated each time a new row is inserted in the `guid` data tables but not when an existing `guid` row's counter is incremented.
+
+Note that the clustering keys sort the columns by unique counts for the month but could easily do it by week or day. Combined with a row scan, this can quickly yield a histogram of unique visits per week or day in a month.
 
 ## Project Requirements
 
