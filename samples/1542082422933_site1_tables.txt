@@ -1,0 +1,1746 @@
+Column Family: 'site1_cf_guid_data'
+Partition Key: 'site1:month:1538352000:1ae93aca-0770-4d7e-96e4-728aca3d5a7a::'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:6603d54a-3992-4781-a87d-5154313b203e:facebook.com:/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:b1408763-4515-4170-a5a6-8be2b1bcdd6b::'
+=>(column='visits', value='8')
+Partition Key: 'site1:month:1538352000:5ce41f41-fc18-4a5d-839f-7fd3a4402ec3:facebook.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:49e57733-6e23-4d26-8106-ddfef01dffaa::'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:ebb24bdc-10dd-4693-ad37-bbc37a90d280:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:fba427e2-1bb8-4e4a-b674-95a4e9335eec:google.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:c66a10ce-261b-47f1-9a30-98b59e7db2f7::/index.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:87a081d3-27b8-4852-98e7-9e275854d7b8:google.com:'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:7df2e708-6aad-486a-a51b-631042c8745d:google.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:8b795e18-01fe-4084-bcd8-8d429e3721c3:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:31dfe103-39c9-42e0-9972-274261a3ab5c:google.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:39a4c5e9-23eb-4ba4-99b9-0c659477a40e:google.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:ca21d0e0-4550-4617-bb55-e7098347cb12:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:51dc04c9-5b0d-4e26-a20d-10f7ea13b3d8:google.com:'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:345014aa-ba19-4807-ad29-3140e0af6e8c:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:c2440dd9-32a4-4ad0-aecd-6171544c9c68:facebook.com:/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:994fde8a-0bf5-4b90-935e-da171cfb66d7::'
+=>(column='visits', value='12')
+Partition Key: 'site1:month:1538352000:2a9c5990-731f-4176-ae0f-723bb0d16955::/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:fa910e87-cb39-44f0-9b98-aac2f41a48c2:google.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:6603d54a-3992-4781-a87d-5154313b203e::'
+=>(column='visits', value='6')
+Partition Key: 'site1:month:1538352000:4f478bd3-4262-416a-9cfd-ab095ff3200b:google.com:'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:d6da687d-4441-456d-98f7-c0df02d8107c::/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:cce06996-15f3-431c-bade-47af14a543dd:google.com:/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:d42b43df-a328-4aa3-a2a7-739f571265a0::/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:f7a3a251-d62d-4a9f-9950-a3762a865741:facebook.com:/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:bb534976-0347-43fd-9f64-9727126de1d8:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:f7cbf5d8-2acd-41a2-958e-aaf3d39db021:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:36dae9b7-d66a-403d-813d-a030633939b7:facebook.com:/index3.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:6efe2834-1763-41c0-9d2c-943bdb6f5962:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:6a155d84-9855-4f00-8906-bca97c5c624f:google.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:f0157b75-1031-4126-b118-93a94036661c::/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:33bc78c2-8fe8-485b-8c4f-18425a304479:google.com:/index.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:52eac37d-b233-4b25-bba0-b0cc2af18ac1:google.com:/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:ebb24bdc-10dd-4693-ad37-bbc37a90d280:google.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:994fde8a-0bf5-4b90-935e-da171cfb66d7::/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:345014aa-ba19-4807-ad29-3140e0af6e8c:google.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:5ce41f41-fc18-4a5d-839f-7fd3a4402ec3:google.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:0d4ddae0-c619-4996-bdf7-989d127e205f::/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:2725eb26-4fad-42ec-9e54-d98443dd3412:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:433c25d0-04d7-420c-8f00-3d3551c65315:google.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:1ad156c6-6721-463b-acfe-0e272b2ad242:google.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:6a155d84-9855-4f00-8906-bca97c5c624f:facebook.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:b97d2581-cd76-4523-9767-e6a92ce5f33f::/index.html'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:ec4b0716-b346-4dca-bf74-c0c2a540fdd9::'
+=>(column='visits', value='6')
+Partition Key: 'site1:month:1538352000:ef818f50-aa87-4581-b5a0-981b29be2fd1::'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:cb18ed36-087f-4679-950c-45198deb9b76:google.com:/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:4ed82e47-7267-490b-b1ec-14fdc0fd68f6:google.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:ca21d0e0-4550-4617-bb55-e7098347cb12::/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:1d11a3b2-f37e-488f-a429-26d375d17742:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:4ed82e47-7267-490b-b1ec-14fdc0fd68f6::'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:b4ad13c1-98df-444a-8893-2767be9f00a6:google.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:b1408763-4515-4170-a5a6-8be2b1bcdd6b:facebook.com:/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:0d4ddae0-c619-4996-bdf7-989d127e205f:facebook.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:1aa43e0d-340b-4318-b9d3-c28443952a46:google.com:/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:4f478bd3-4262-416a-9cfd-ab095ff3200b::'
+=>(column='visits', value='6')
+Partition Key: 'site1:month:1538352000:cce06996-15f3-431c-bade-47af14a543dd::/index3.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:2346458b-d64e-432e-b2ce-9414cd27c360:facebook.com:'
+=>(column='visits', value='6')
+Partition Key: 'site1:month:1538352000:d27e8867-5ebe-4f4c-9c4b-3c1f8fe58933:facebook.com:/index2.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:91d58546-919e-41cb-ad79-eb115eff3389::/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:c66a10ce-261b-47f1-9a30-98b59e7db2f7:google.com:/index2.html'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:b05efcf3-ab6f-4fcc-8ec1-aedff3d45447::/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:9ad4748a-d972-4483-847d-0edb6d30cd3c::/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:433c25d0-04d7-420c-8f00-3d3551c65315::/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:f495664f-a4a9-465b-8cf1-44a3aec10008::/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:ca860706-87a1-4692-9d62-14d81a86ed8a:facebook.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:b1408763-4515-4170-a5a6-8be2b1bcdd6b:facebook.com:'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:4cd5c6d8-21fa-49cd-9ae7-0cb64bc80889::'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:c2440dd9-32a4-4ad0-aecd-6171544c9c68:google.com:'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:4ed82e47-7267-490b-b1ec-14fdc0fd68f6::/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:d53d25b7-7227-4136-ba7b-c398e2e44645::/index3.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:b4ad13c1-98df-444a-8893-2767be9f00a6:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:f7a3a251-d62d-4a9f-9950-a3762a865741:facebook.com:'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:66c1a839-f1ea-46b7-ae71-cce26fe561e1:facebook.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:954b61f6-e1c9-46b0-92ba-95d88e48263a:facebook.com:/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:f2729ac4-6301-4694-ba93-5f0bf36c3d64:google.com:/index.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:796e0bd9-9bc6-4360-bba4-41a445c67c33:google.com:'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:d42b43df-a328-4aa3-a2a7-739f571265a0:google.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:0a9d550e-15c1-4c35-a9d5-2b0de3c2f834:facebook.com:'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:1a0ef06f-37bb-48a4-aac4-bff496bdf4ba:facebook.com:'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:954b61f6-e1c9-46b0-92ba-95d88e48263a:google.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:9ad4748a-d972-4483-847d-0edb6d30cd3c:google.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:bb534976-0347-43fd-9f64-9727126de1d8:facebook.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:f0157b75-1031-4126-b118-93a94036661c:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:994fde8a-0bf5-4b90-935e-da171cfb66d7:google.com:/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:c8ed5e93-f9be-4aa1-98c6-ad1a75f364b5::'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:e61cb449-69c0-475d-905c-a31fd73cca73::'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:52589057-3a8c-4b50-9815-ef73348ef949:google.com:'
+=>(column='visits', value='6')
+Partition Key: 'site1:month:1538352000:1aa43e0d-340b-4318-b9d3-c28443952a46::/index2.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:2725eb26-4fad-42ec-9e54-d98443dd3412:facebook.com:'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:bb534976-0347-43fd-9f64-9727126de1d8:google.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:0d4ddae0-c619-4996-bdf7-989d127e205f:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:f495664f-a4a9-465b-8cf1-44a3aec10008:google.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:8b795e18-01fe-4084-bcd8-8d429e3721c3:facebook.com:'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:10a48c70-7a02-4900-895e-fe174b8cd8dd:facebook.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:88d34687-2e08-4746-9116-b92468140cf5:google.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:4ed9e783-5708-4e8c-94b5-44462307a9e0::/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:1aa43e0d-340b-4318-b9d3-c28443952a46::'
+=>(column='visits', value='6')
+Partition Key: 'site1:month:1538352000:8c297ac9-b113-4e81-b3b5-b379d9e910d3:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:52589057-3a8c-4b50-9815-ef73348ef949::'
+=>(column='visits', value='11')
+Partition Key: 'site1:month:1538352000:87a081d3-27b8-4852-98e7-9e275854d7b8:google.com:/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:3748520b-7630-4e76-b220-d9e5a53837ce::/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:0fdb171e-fd73-4896-a659-dc33905ebec8:facebook.com:/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:75ca6019-07a6-44e4-a294-1e4d23e27d16:google.com:/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:36dae9b7-d66a-403d-813d-a030633939b7:facebook.com:'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:f374a37b-f457-411a-8f48-d91eb737739a::/index3.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:aa59d3a9-8549-4c31-a7c9-61a2a86ebcc2:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:954b61f6-e1c9-46b0-92ba-95d88e48263a::'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:a796f998-7c6e-4662-888f-e53375552331:facebook.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:91d58546-919e-41cb-ad79-eb115eff3389::/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:ef818f50-aa87-4581-b5a0-981b29be2fd1:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:2a9c5990-731f-4176-ae0f-723bb0d16955::'
+=>(column='visits', value='10')
+Partition Key: 'site1:month:1538352000:d42b43df-a328-4aa3-a2a7-739f571265a0:google.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:11a5de3a-80ec-4d4e-b377-00ca53e0657c:google.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:8783be72-b57e-441e-b7af-e65848cbcd4c::/index.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:5cc8f631-795b-4416-98a5-abf4c64210a1:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:b4ad13c1-98df-444a-8893-2767be9f00a6:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:1ae93aca-0770-4d7e-96e4-728aca3d5a7a::/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:2a9c5990-731f-4176-ae0f-723bb0d16955:facebook.com:/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:52756098-e016-4530-8c2c-f62196d21bb0:google.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:e567a403-dbb4-419f-905e-5edcbd288903::/index3.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:fba427e2-1bb8-4e4a-b674-95a4e9335eec:facebook.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:52eac37d-b233-4b25-bba0-b0cc2af18ac1:google.com:/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:88d34687-2e08-4746-9116-b92468140cf5::/index3.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:0fdb171e-fd73-4896-a659-dc33905ebec8:google.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:5ac0e495-4f68-4586-9f30-34ee31b10b50:facebook.com:/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:4cd5c6d8-21fa-49cd-9ae7-0cb64bc80889::/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:c66a10ce-261b-47f1-9a30-98b59e7db2f7::'
+=>(column='visits', value='8')
+Partition Key: 'site1:month:1538352000:b05efcf3-ab6f-4fcc-8ec1-aedff3d45447:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:345014aa-ba19-4807-ad29-3140e0af6e8c:facebook.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:1aa43e0d-340b-4318-b9d3-c28443952a46::/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:33bc78c2-8fe8-485b-8c4f-18425a304479:facebook.com:/index.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:aa59d3a9-8549-4c31-a7c9-61a2a86ebcc2:google.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:52756098-e016-4530-8c2c-f62196d21bb0:facebook.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:5ce41f41-fc18-4a5d-839f-7fd3a4402ec3::'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:5ce41f41-fc18-4a5d-839f-7fd3a4402ec3::/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:52eac37d-b233-4b25-bba0-b0cc2af18ac1:google.com:'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:57dbecfa-a1b6-4b04-8b86-974a819bd33a::/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:ef818f50-aa87-4581-b5a0-981b29be2fd1:google.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:d6da687d-4441-456d-98f7-c0df02d8107c:facebook.com:'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:0a9d550e-15c1-4c35-a9d5-2b0de3c2f834:google.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:4cd5c6d8-21fa-49cd-9ae7-0cb64bc80889::/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:f0157b75-1031-4126-b118-93a94036661c:facebook.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:57dbecfa-a1b6-4b04-8b86-974a819bd33a:google.com:'
+=>(column='visits', value='6')
+Partition Key: 'site1:month:1538352000:1ad156c6-6721-463b-acfe-0e272b2ad242::/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:8783be72-b57e-441e-b7af-e65848cbcd4c:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:7251b216-a15d-4a80-817f-e9a6bad63622:google.com:/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:33bc78c2-8fe8-485b-8c4f-18425a304479:facebook.com:'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:f374a37b-f457-411a-8f48-d91eb737739a:facebook.com:/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:4cd5c6d8-21fa-49cd-9ae7-0cb64bc80889:facebook.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:d1081133-337a-4440-a266-14c9fb7f9646:facebook.com:/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:aa59d3a9-8549-4c31-a7c9-61a2a86ebcc2::/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:07e7de8b-b444-4f93-8264-2bfcabc65856:google.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:56b7d991-3f32-4055-9ebe-085d7aea66ea::/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:68caf2ef-6fae-46b5-bb8c-69b9339441ff::/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:66c1a839-f1ea-46b7-ae71-cce26fe561e1::/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:b4ad13c1-98df-444a-8893-2767be9f00a6:facebook.com:/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:bb534976-0347-43fd-9f64-9727126de1d8::'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:796e0bd9-9bc6-4360-bba4-41a445c67c33:google.com:/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:cce06996-15f3-431c-bade-47af14a543dd:google.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:88d34687-2e08-4746-9116-b92468140cf5:facebook.com:/index3.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:bb534976-0347-43fd-9f64-9727126de1d8:google.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:2a9c5990-731f-4176-ae0f-723bb0d16955:google.com:/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:cb18ed36-087f-4679-950c-45198deb9b76::/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:1ad156c6-6721-463b-acfe-0e272b2ad242:facebook.com:/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:d1081133-337a-4440-a266-14c9fb7f9646:google.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:0fca5a7f-4e05-456d-ad1c-dfcf12971fa9::'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:e61cb449-69c0-475d-905c-a31fd73cca73:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:57dbecfa-a1b6-4b04-8b86-974a819bd33a::'
+=>(column='visits', value='9')
+Partition Key: 'site1:month:1538352000:d23aab62-54d8-4288-bb05-9be0ab8a81dc:google.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:3f7c2dcc-da6e-42fc-9032-721ea23e89b5::/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:7251b216-a15d-4a80-817f-e9a6bad63622::'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:f0157b75-1031-4126-b118-93a94036661c::'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:954b61f6-e1c9-46b0-92ba-95d88e48263a:google.com:/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:51dc04c9-5b0d-4e26-a20d-10f7ea13b3d8:google.com:/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:10a48c70-7a02-4900-895e-fe174b8cd8dd:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:4ed82e47-7267-490b-b1ec-14fdc0fd68f6:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:6a155d84-9855-4f00-8906-bca97c5c624f:facebook.com:'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:a9488b5c-67d8-43fa-bab7-69a9d54fc91d:google.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:b4ad13c1-98df-444a-8893-2767be9f00a6::/index.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:433c25d0-04d7-420c-8f00-3d3551c65315:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:f7a3a251-d62d-4a9f-9950-a3762a865741::/index.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:c5592bf4-db40-40e5-8f25-e6cdfb671134::/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:73d06eb8-aaae-47e1-8d1b-2022d06ce950:google.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:91d58546-919e-41cb-ad79-eb115eff3389:google.com:/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:f374a37b-f457-411a-8f48-d91eb737739a:google.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:51dc04c9-5b0d-4e26-a20d-10f7ea13b3d8::/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:2725eb26-4fad-42ec-9e54-d98443dd3412:google.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:b05efcf3-ab6f-4fcc-8ec1-aedff3d45447:facebook.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:b1408763-4515-4170-a5a6-8be2b1bcdd6b:facebook.com:/index3.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:4f478bd3-4262-416a-9cfd-ab095ff3200b::/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:e567a403-dbb4-419f-905e-5edcbd288903:facebook.com:/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:c66a10ce-261b-47f1-9a30-98b59e7db2f7:google.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:2346458b-d64e-432e-b2ce-9414cd27c360::/index2.html'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:e61cb449-69c0-475d-905c-a31fd73cca73:facebook.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:1a0ef06f-37bb-48a4-aac4-bff496bdf4ba::/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:36dae9b7-d66a-403d-813d-a030633939b7::'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:f374a37b-f457-411a-8f48-d91eb737739a::/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:8783be72-b57e-441e-b7af-e65848cbcd4c:facebook.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:2725eb26-4fad-42ec-9e54-d98443dd3412::/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:c5592bf4-db40-40e5-8f25-e6cdfb671134:google.com:'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:88d34687-2e08-4746-9116-b92468140cf5::/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:52589057-3a8c-4b50-9815-ef73348ef949:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:10a48c70-7a02-4900-895e-fe174b8cd8dd::/index2.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:1aa43e0d-340b-4318-b9d3-c28443952a46:facebook.com:'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:f495664f-a4a9-465b-8cf1-44a3aec10008:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:11a5de3a-80ec-4d4e-b377-00ca53e0657c::'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:c2440dd9-32a4-4ad0-aecd-6171544c9c68:google.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:9ad4748a-d972-4483-847d-0edb6d30cd3c:facebook.com:/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:68caf2ef-6fae-46b5-bb8c-69b9339441ff::/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:917a5bb3-49c7-4154-84b5-1c804e804919:google.com:/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:68caf2ef-6fae-46b5-bb8c-69b9339441ff:google.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:d6da687d-4441-456d-98f7-c0df02d8107c:facebook.com:/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:6603d54a-3992-4781-a87d-5154313b203e:facebook.com:'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:aa59d3a9-8549-4c31-a7c9-61a2a86ebcc2:facebook.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:4f478bd3-4262-416a-9cfd-ab095ff3200b:facebook.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:f495664f-a4a9-465b-8cf1-44a3aec10008:facebook.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:0fca5a7f-4e05-456d-ad1c-dfcf12971fa9:google.com:/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:9ad4748a-d972-4483-847d-0edb6d30cd3c:google.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:d53d25b7-7227-4136-ba7b-c398e2e44645::/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:51dc04c9-5b0d-4e26-a20d-10f7ea13b3d8:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:2a9c5990-731f-4176-ae0f-723bb0d16955:facebook.com:/index3.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:8c297ac9-b113-4e81-b3b5-b379d9e910d3::'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:cf6e021e-0a9c-43a7-b4cf-de572779c187:facebook.com:/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:ec4b0716-b346-4dca-bf74-c0c2a540fdd9:facebook.com:'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:d53d25b7-7227-4136-ba7b-c398e2e44645:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:1012bfae-2a56-46fd-b48f-b8b5ec9d9ef6:google.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:73d06eb8-aaae-47e1-8d1b-2022d06ce950:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:5cc8f631-795b-4416-98a5-abf4c64210a1::/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:f2729ac4-6301-4694-ba93-5f0bf36c3d64:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:57dbecfa-a1b6-4b04-8b86-974a819bd33a:facebook.com:/index2.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:fba427e2-1bb8-4e4a-b674-95a4e9335eec::'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:ebb24bdc-10dd-4693-ad37-bbc37a90d280:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:fba427e2-1bb8-4e4a-b674-95a4e9335eec:facebook.com:/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:3748520b-7630-4e76-b220-d9e5a53837ce::'
+=>(column='visits', value='6')
+Partition Key: 'site1:month:1538352000:f0157b75-1031-4126-b118-93a94036661c:google.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:33bc78c2-8fe8-485b-8c4f-18425a304479:google.com:'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:433c25d0-04d7-420c-8f00-3d3551c65315::/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:49e57733-6e23-4d26-8106-ddfef01dffaa:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:ad84ae35-22f7-4779-856a-98f60bbf7cce:google.com:/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:d27e8867-5ebe-4f4c-9c4b-3c1f8fe58933:facebook.com:'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:10a48c70-7a02-4900-895e-fe174b8cd8dd::'
+=>(column='visits', value='6')
+Partition Key: 'site1:month:1538352000:49e57733-6e23-4d26-8106-ddfef01dffaa::/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:6603d54a-3992-4781-a87d-5154313b203e:google.com:/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:b4ad13c1-98df-444a-8893-2767be9f00a6:facebook.com:'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:c8ed5e93-f9be-4aa1-98c6-ad1a75f364b5:facebook.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:796e0bd9-9bc6-4360-bba4-41a445c67c33:facebook.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:917a5bb3-49c7-4154-84b5-1c804e804919:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:d6da687d-4441-456d-98f7-c0df02d8107c:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:5ce41f41-fc18-4a5d-839f-7fd3a4402ec3:google.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:52eac37d-b233-4b25-bba0-b0cc2af18ac1:facebook.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:1aa43e0d-340b-4318-b9d3-c28443952a46:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:1ad156c6-6721-463b-acfe-0e272b2ad242::/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:aa59d3a9-8549-4c31-a7c9-61a2a86ebcc2:google.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:c2440dd9-32a4-4ad0-aecd-6171544c9c68::/index.html'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:5ce41f41-fc18-4a5d-839f-7fd3a4402ec3:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:9ad4748a-d972-4483-847d-0edb6d30cd3c:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:cce06996-15f3-431c-bade-47af14a543dd::'
+=>(column='visits', value='6')
+Partition Key: 'site1:month:1538352000:917a5bb3-49c7-4154-84b5-1c804e804919:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:917a5bb3-49c7-4154-84b5-1c804e804919:google.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:52589057-3a8c-4b50-9815-ef73348ef949::/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:5cc8f631-795b-4416-98a5-abf4c64210a1::/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:f2729ac4-6301-4694-ba93-5f0bf36c3d64:google.com:'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:2346458b-d64e-432e-b2ce-9414cd27c360::'
+=>(column='visits', value='10')
+Partition Key: 'site1:month:1538352000:4ed82e47-7267-490b-b1ec-14fdc0fd68f6::/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:6603d54a-3992-4781-a87d-5154313b203e:google.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:9d555ce9-1458-49a8-a9fd-aec655fc8b76:facebook.com:'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:ca21d0e0-4550-4617-bb55-e7098347cb12::'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:75ca6019-07a6-44e4-a294-1e4d23e27d16:facebook.com:/index.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:994fde8a-0bf5-4b90-935e-da171cfb66d7:facebook.com:/index2.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:66c1a839-f1ea-46b7-ae71-cce26fe561e1::/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:6efe2834-1763-41c0-9d2c-943bdb6f5962::/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:87a081d3-27b8-4852-98e7-9e275854d7b8::/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:b97d2581-cd76-4523-9767-e6a92ce5f33f:google.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:6a155d84-9855-4f00-8906-bca97c5c624f::/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:d23aab62-54d8-4288-bb05-9be0ab8a81dc::/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:1012bfae-2a56-46fd-b48f-b8b5ec9d9ef6:google.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:c8ed5e93-f9be-4aa1-98c6-ad1a75f364b5:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:0fdb171e-fd73-4896-a659-dc33905ebec8::/index3.html'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:fa910e87-cb39-44f0-9b98-aac2f41a48c2:facebook.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:ef818f50-aa87-4581-b5a0-981b29be2fd1:facebook.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:75ca6019-07a6-44e4-a294-1e4d23e27d16:facebook.com:'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:d1081133-337a-4440-a266-14c9fb7f9646:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:f7cbf5d8-2acd-41a2-958e-aaf3d39db021::'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:a9488b5c-67d8-43fa-bab7-69a9d54fc91d:facebook.com:'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:8b795e18-01fe-4084-bcd8-8d429e3721c3:facebook.com:/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:ad84ae35-22f7-4779-856a-98f60bbf7cce:google.com:'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:994fde8a-0bf5-4b90-935e-da171cfb66d7:facebook.com:'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:51dc04c9-5b0d-4e26-a20d-10f7ea13b3d8::/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:d53d25b7-7227-4136-ba7b-c398e2e44645:facebook.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:4f478bd3-4262-416a-9cfd-ab095ff3200b:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:57dbecfa-a1b6-4b04-8b86-974a819bd33a:facebook.com:'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:36dae9b7-d66a-403d-813d-a030633939b7:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:75ca6019-07a6-44e4-a294-1e4d23e27d16:google.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:f7a3a251-d62d-4a9f-9950-a3762a865741::'
+=>(column='visits', value='6')
+Partition Key: 'site1:month:1538352000:7df2e708-6aad-486a-a51b-631042c8745d:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:5ac0e495-4f68-4586-9f30-34ee31b10b50::/index.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:68caf2ef-6fae-46b5-bb8c-69b9339441ff:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:917a5bb3-49c7-4154-84b5-1c804e804919:facebook.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:3748520b-7630-4e76-b220-d9e5a53837ce:facebook.com:/index.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:4f478bd3-4262-416a-9cfd-ab095ff3200b:google.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:5ce41f41-fc18-4a5d-839f-7fd3a4402ec3:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:52756098-e016-4530-8c2c-f62196d21bb0::'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:f0157b75-1031-4126-b118-93a94036661c::/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:33bc78c2-8fe8-485b-8c4f-18425a304479:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:0fdb171e-fd73-4896-a659-dc33905ebec8::/index.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:345014aa-ba19-4807-ad29-3140e0af6e8c::'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:c2440dd9-32a4-4ad0-aecd-6171544c9c68:facebook.com:/index.html'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:ec4b0716-b346-4dca-bf74-c0c2a540fdd9:google.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:73d06eb8-aaae-47e1-8d1b-2022d06ce950::/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:72feab80-84af-4370-93d9-5867a76f6613::'
+=>(column='visits', value='8')
+Partition Key: 'site1:month:1538352000:e61cb449-69c0-475d-905c-a31fd73cca73::/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:52eac37d-b233-4b25-bba0-b0cc2af18ac1::/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:31dfe103-39c9-42e0-9972-274261a3ab5c::'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:e567a403-dbb4-419f-905e-5edcbd288903::/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:2a9c5990-731f-4176-ae0f-723bb0d16955::/index3.html'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:345014aa-ba19-4807-ad29-3140e0af6e8c::/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:07e7de8b-b444-4f93-8264-2bfcabc65856::/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:c2440dd9-32a4-4ad0-aecd-6171544c9c68:google.com:/index3.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:796e0bd9-9bc6-4360-bba4-41a445c67c33:facebook.com:/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:33bc78c2-8fe8-485b-8c4f-18425a304479::/index.html'
+=>(column='visits', value='6')
+Partition Key: 'site1:month:1538352000:d23aab62-54d8-4288-bb05-9be0ab8a81dc:google.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:9d555ce9-1458-49a8-a9fd-aec655fc8b76:google.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:31dfe103-39c9-42e0-9972-274261a3ab5c:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:ec4b0716-b346-4dca-bf74-c0c2a540fdd9:facebook.com:/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:8c297ac9-b113-4e81-b3b5-b379d9e910d3:google.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:9080a896-4f0c-480f-8db4-784b871a3d88::/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:8783be72-b57e-441e-b7af-e65848cbcd4c:google.com:'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:b1408763-4515-4170-a5a6-8be2b1bcdd6b:google.com:'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:1012bfae-2a56-46fd-b48f-b8b5ec9d9ef6::/index3.html'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:56b7d991-3f32-4055-9ebe-085d7aea66ea:google.com:/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:6a155d84-9855-4f00-8906-bca97c5c624f:google.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:73d06eb8-aaae-47e1-8d1b-2022d06ce950:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:d53d25b7-7227-4136-ba7b-c398e2e44645::/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:0a9d550e-15c1-4c35-a9d5-2b0de3c2f834:facebook.com:/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:c2440dd9-32a4-4ad0-aecd-6171544c9c68::'
+=>(column='visits', value='10')
+Partition Key: 'site1:month:1538352000:10a48c70-7a02-4900-895e-fe174b8cd8dd:facebook.com:/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:aa59d3a9-8549-4c31-a7c9-61a2a86ebcc2::/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:433c25d0-04d7-420c-8f00-3d3551c65315:facebook.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:d42b43df-a328-4aa3-a2a7-739f571265a0::/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:0fca5a7f-4e05-456d-ad1c-dfcf12971fa9:google.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:2346458b-d64e-432e-b2ce-9414cd27c360::/index.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:c8ed5e93-f9be-4aa1-98c6-ad1a75f364b5:google.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:cf6e021e-0a9c-43a7-b4cf-de572779c187:facebook.com:/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:d23aab62-54d8-4288-bb05-9be0ab8a81dc::'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:7251b216-a15d-4a80-817f-e9a6bad63622::/index3.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:e61cb449-69c0-475d-905c-a31fd73cca73::/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:d42b43df-a328-4aa3-a2a7-739f571265a0:facebook.com:'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:87a081d3-27b8-4852-98e7-9e275854d7b8:facebook.com:'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:1a0ef06f-37bb-48a4-aac4-bff496bdf4ba:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:2725eb26-4fad-42ec-9e54-d98443dd3412:facebook.com:/index.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:0d4ddae0-c619-4996-bdf7-989d127e205f::/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:ca21d0e0-4550-4617-bb55-e7098347cb12::/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:72feab80-84af-4370-93d9-5867a76f6613:google.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:345014aa-ba19-4807-ad29-3140e0af6e8c:google.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:db95b369-05b7-4c87-b36b-9ceaba350f14:google.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:b97d2581-cd76-4523-9767-e6a92ce5f33f::'
+=>(column='visits', value='8')
+Partition Key: 'site1:month:1538352000:2725eb26-4fad-42ec-9e54-d98443dd3412::/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:796e0bd9-9bc6-4360-bba4-41a445c67c33:google.com:/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:917a5bb3-49c7-4154-84b5-1c804e804919::/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:bb534976-0347-43fd-9f64-9727126de1d8::/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:8c297ac9-b113-4e81-b3b5-b379d9e910d3:google.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:d42b43df-a328-4aa3-a2a7-739f571265a0:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:57dbecfa-a1b6-4b04-8b86-974a819bd33a::/index2.html'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:52756098-e016-4530-8c2c-f62196d21bb0::/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:3748520b-7630-4e76-b220-d9e5a53837ce:google.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:10a48c70-7a02-4900-895e-fe174b8cd8dd:facebook.com:'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:4ed82e47-7267-490b-b1ec-14fdc0fd68f6:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:49e57733-6e23-4d26-8106-ddfef01dffaa:facebook.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:9080a896-4f0c-480f-8db4-784b871a3d88::'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:ec4b0716-b346-4dca-bf74-c0c2a540fdd9:google.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:9ad4748a-d972-4483-847d-0edb6d30cd3c:google.com:'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:d27e8867-5ebe-4f4c-9c4b-3c1f8fe58933:google.com:/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:994fde8a-0bf5-4b90-935e-da171cfb66d7:google.com:'
+=>(column='visits', value='9')
+Partition Key: 'site1:month:1538352000:f7a3a251-d62d-4a9f-9950-a3762a865741:facebook.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:0fdb171e-fd73-4896-a659-dc33905ebec8::'
+=>(column='visits', value='7')
+Partition Key: 'site1:month:1538352000:1d11a3b2-f37e-488f-a429-26d375d17742:google.com:/index2.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:a9488b5c-67d8-43fa-bab7-69a9d54fc91d::/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:31dfe103-39c9-42e0-9972-274261a3ab5c:google.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:d53d25b7-7227-4136-ba7b-c398e2e44645:google.com:/index3.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:56b7d991-3f32-4055-9ebe-085d7aea66ea:google.com:'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:4cd5c6d8-21fa-49cd-9ae7-0cb64bc80889:facebook.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:39a4c5e9-23eb-4ba4-99b9-0c659477a40e:facebook.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:2346458b-d64e-432e-b2ce-9414cd27c360:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:fa910e87-cb39-44f0-9b98-aac2f41a48c2::/index2.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:8b795e18-01fe-4084-bcd8-8d429e3721c3::/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:66c1a839-f1ea-46b7-ae71-cce26fe561e1:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:5cc8f631-795b-4416-98a5-abf4c64210a1:google.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:87a081d3-27b8-4852-98e7-9e275854d7b8::'
+=>(column='visits', value='8')
+Partition Key: 'site1:month:1538352000:31dfe103-39c9-42e0-9972-274261a3ab5c::/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:2346458b-d64e-432e-b2ce-9414cd27c360:facebook.com:/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:52eac37d-b233-4b25-bba0-b0cc2af18ac1:google.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:f7cbf5d8-2acd-41a2-958e-aaf3d39db021:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:bb534976-0347-43fd-9f64-9727126de1d8:facebook.com:/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:88d34687-2e08-4746-9116-b92468140cf5:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:1aa43e0d-340b-4318-b9d3-c28443952a46::/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:1d11a3b2-f37e-488f-a429-26d375d17742:google.com:'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:ca860706-87a1-4692-9d62-14d81a86ed8a:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:39a4c5e9-23eb-4ba4-99b9-0c659477a40e:google.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:2a9c5990-731f-4176-ae0f-723bb0d16955:google.com:/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:ec4b0716-b346-4dca-bf74-c0c2a540fdd9::/index2.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:e0e921f4-d471-4ba4-bc8c-fbc44aa120c9:google.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:b05efcf3-ab6f-4fcc-8ec1-aedff3d45447::'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:ca860706-87a1-4692-9d62-14d81a86ed8a::/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:10a48c70-7a02-4900-895e-fe174b8cd8dd:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:994fde8a-0bf5-4b90-935e-da171cfb66d7::/index2.html'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:4ed9e783-5708-4e8c-94b5-44462307a9e0::'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:9ad4748a-d972-4483-847d-0edb6d30cd3c::'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:8c297ac9-b113-4e81-b3b5-b379d9e910d3:facebook.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:0d4ddae0-c619-4996-bdf7-989d127e205f:google.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:1a0ef06f-37bb-48a4-aac4-bff496bdf4ba::'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:1012bfae-2a56-46fd-b48f-b8b5ec9d9ef6::/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:a796f998-7c6e-4662-888f-e53375552331::/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:3f7c2dcc-da6e-42fc-9032-721ea23e89b5:google.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:52eac37d-b233-4b25-bba0-b0cc2af18ac1::/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:87a081d3-27b8-4852-98e7-9e275854d7b8:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:d1081133-337a-4440-a266-14c9fb7f9646::/index3.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:52756098-e016-4530-8c2c-f62196d21bb0:google.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:1aa43e0d-340b-4318-b9d3-c28443952a46:google.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:6a155d84-9855-4f00-8906-bca97c5c624f:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:db95b369-05b7-4c87-b36b-9ceaba350f14::/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:66c1a839-f1ea-46b7-ae71-cce26fe561e1:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:b97d2581-cd76-4523-9767-e6a92ce5f33f:facebook.com:'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:b97d2581-cd76-4523-9767-e6a92ce5f33f:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:3748520b-7630-4e76-b220-d9e5a53837ce::/index.html'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:4ed82e47-7267-490b-b1ec-14fdc0fd68f6:facebook.com:'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:917a5bb3-49c7-4154-84b5-1c804e804919::/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:75ca6019-07a6-44e4-a294-1e4d23e27d16::/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:9d555ce9-1458-49a8-a9fd-aec655fc8b76::/index3.html'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:6603d54a-3992-4781-a87d-5154313b203e:facebook.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:72feab80-84af-4370-93d9-5867a76f6613::/index2.html'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:6efe2834-1763-41c0-9d2c-943bdb6f5962:facebook.com:'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:917a5bb3-49c7-4154-84b5-1c804e804919::/index.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:8b795e18-01fe-4084-bcd8-8d429e3721c3::/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:f7cbf5d8-2acd-41a2-958e-aaf3d39db021::/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:33bc78c2-8fe8-485b-8c4f-18425a304479:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:7251b216-a15d-4a80-817f-e9a6bad63622::/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:b05efcf3-ab6f-4fcc-8ec1-aedff3d45447:google.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:0fdb171e-fd73-4896-a659-dc33905ebec8:facebook.com:'
+=>(column='visits', value='6')
+Partition Key: 'site1:month:1538352000:0a9d550e-15c1-4c35-a9d5-2b0de3c2f834:facebook.com:/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:1a0ef06f-37bb-48a4-aac4-bff496bdf4ba:facebook.com:/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:ebb24bdc-10dd-4693-ad37-bbc37a90d280::/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:52589057-3a8c-4b50-9815-ef73348ef949:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:ca21d0e0-4550-4617-bb55-e7098347cb12:google.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:87a081d3-27b8-4852-98e7-9e275854d7b8::/index.html'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:917a5bb3-49c7-4154-84b5-1c804e804919::'
+=>(column='visits', value='6')
+Partition Key: 'site1:month:1538352000:8c297ac9-b113-4e81-b3b5-b379d9e910d3::/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:e567a403-dbb4-419f-905e-5edcbd288903::'
+=>(column='visits', value='8')
+Partition Key: 'site1:month:1538352000:a9488b5c-67d8-43fa-bab7-69a9d54fc91d::/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:5ac0e495-4f68-4586-9f30-34ee31b10b50::/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:1012bfae-2a56-46fd-b48f-b8b5ec9d9ef6:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:0a9d550e-15c1-4c35-a9d5-2b0de3c2f834:google.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:ef818f50-aa87-4581-b5a0-981b29be2fd1:facebook.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:52756098-e016-4530-8c2c-f62196d21bb0:google.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:ebb24bdc-10dd-4693-ad37-bbc37a90d280::/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:3f7c2dcc-da6e-42fc-9032-721ea23e89b5::'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:aa59d3a9-8549-4c31-a7c9-61a2a86ebcc2:facebook.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:f495664f-a4a9-465b-8cf1-44a3aec10008::/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:d27e8867-5ebe-4f4c-9c4b-3c1f8fe58933::/index2.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:4ed82e47-7267-490b-b1ec-14fdc0fd68f6:facebook.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:f7a3a251-d62d-4a9f-9950-a3762a865741:google.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:1ad156c6-6721-463b-acfe-0e272b2ad242:facebook.com:'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:a796f998-7c6e-4662-888f-e53375552331::'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:1aa43e0d-340b-4318-b9d3-c28443952a46:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:6efe2834-1763-41c0-9d2c-943bdb6f5962:facebook.com:/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:f495664f-a4a9-465b-8cf1-44a3aec10008::'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:e0e921f4-d471-4ba4-bc8c-fbc44aa120c9::'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:51dc04c9-5b0d-4e26-a20d-10f7ea13b3d8:facebook.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:a9488b5c-67d8-43fa-bab7-69a9d54fc91d::'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:d27e8867-5ebe-4f4c-9c4b-3c1f8fe58933::'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:1a0ef06f-37bb-48a4-aac4-bff496bdf4ba:google.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:d6da687d-4441-456d-98f7-c0df02d8107c:google.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:72feab80-84af-4370-93d9-5867a76f6613:facebook.com:/index2.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:cb18ed36-087f-4679-950c-45198deb9b76:facebook.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:c8ed5e93-f9be-4aa1-98c6-ad1a75f364b5::/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:f2729ac4-6301-4694-ba93-5f0bf36c3d64::/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:c66a10ce-261b-47f1-9a30-98b59e7db2f7:facebook.com:'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:2725eb26-4fad-42ec-9e54-d98443dd3412::/index.html'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:9d555ce9-1458-49a8-a9fd-aec655fc8b76::'
+=>(column='visits', value='7')
+Partition Key: 'site1:month:1538352000:cf6e021e-0a9c-43a7-b4cf-de572779c187::/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:1d11a3b2-f37e-488f-a429-26d375d17742::/index2.html'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:a9488b5c-67d8-43fa-bab7-69a9d54fc91d:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:ca860706-87a1-4692-9d62-14d81a86ed8a:google.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:b1408763-4515-4170-a5a6-8be2b1bcdd6b:google.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:8783be72-b57e-441e-b7af-e65848cbcd4c::/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:cf6e021e-0a9c-43a7-b4cf-de572779c187::/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:0d4ddae0-c619-4996-bdf7-989d127e205f:google.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:c2440dd9-32a4-4ad0-aecd-6171544c9c68:facebook.com:'
+=>(column='visits', value='6')
+Partition Key: 'site1:month:1538352000:3748520b-7630-4e76-b220-d9e5a53837ce:facebook.com:'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:1ad156c6-6721-463b-acfe-0e272b2ad242:facebook.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:f374a37b-f457-411a-8f48-d91eb737739a:facebook.com:'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:c5592bf4-db40-40e5-8f25-e6cdfb671134:google.com:/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:cb18ed36-087f-4679-950c-45198deb9b76:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:88d34687-2e08-4746-9116-b92468140cf5::/index.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:39a4c5e9-23eb-4ba4-99b9-0c659477a40e:facebook.com:/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:8783be72-b57e-441e-b7af-e65848cbcd4c::'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:2a9c5990-731f-4176-ae0f-723bb0d16955:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:db95b369-05b7-4c87-b36b-9ceaba350f14::'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:6603d54a-3992-4781-a87d-5154313b203e::/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:0fdb171e-fd73-4896-a659-dc33905ebec8:facebook.com:/index3.html'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:cb18ed36-087f-4679-950c-45198deb9b76:google.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:db95b369-05b7-4c87-b36b-9ceaba350f14::/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:91d58546-919e-41cb-ad79-eb115eff3389:google.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:6603d54a-3992-4781-a87d-5154313b203e::/index3.html'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:31dfe103-39c9-42e0-9972-274261a3ab5c:google.com:'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:796e0bd9-9bc6-4360-bba4-41a445c67c33::/index2.html'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:e567a403-dbb4-419f-905e-5edcbd288903:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:68caf2ef-6fae-46b5-bb8c-69b9339441ff:facebook.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:ad84ae35-22f7-4779-856a-98f60bbf7cce:google.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:39a4c5e9-23eb-4ba4-99b9-0c659477a40e:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:5cc8f631-795b-4416-98a5-abf4c64210a1:facebook.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:2346458b-d64e-432e-b2ce-9414cd27c360:google.com:'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:52589057-3a8c-4b50-9815-ef73348ef949:google.com:/index2.html'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:fba427e2-1bb8-4e4a-b674-95a4e9335eec::/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:e567a403-dbb4-419f-905e-5edcbd288903:google.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:9ad4748a-d972-4483-847d-0edb6d30cd3c::/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:68caf2ef-6fae-46b5-bb8c-69b9339441ff:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:954b61f6-e1c9-46b0-92ba-95d88e48263a:facebook.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:e61cb449-69c0-475d-905c-a31fd73cca73:facebook.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:4ed9e783-5708-4e8c-94b5-44462307a9e0:google.com:'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:ca21d0e0-4550-4617-bb55-e7098347cb12:google.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:2346458b-d64e-432e-b2ce-9414cd27c360::/index3.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:87a081d3-27b8-4852-98e7-9e275854d7b8::/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:52589057-3a8c-4b50-9815-ef73348ef949::/index2.html'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:ef818f50-aa87-4581-b5a0-981b29be2fd1::/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:9080a896-4f0c-480f-8db4-784b871a3d88:google.com:/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:d1081133-337a-4440-a266-14c9fb7f9646:facebook.com:/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:433c25d0-04d7-420c-8f00-3d3551c65315::/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:c8ed5e93-f9be-4aa1-98c6-ad1a75f364b5::/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:1ae93aca-0770-4d7e-96e4-728aca3d5a7a::/index3.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:b4ad13c1-98df-444a-8893-2767be9f00a6::/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:7df2e708-6aad-486a-a51b-631042c8745d::/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:0a9d550e-15c1-4c35-a9d5-2b0de3c2f834:google.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:1aa43e0d-340b-4318-b9d3-c28443952a46:facebook.com:/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:8783be72-b57e-441e-b7af-e65848cbcd4c:facebook.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:1012bfae-2a56-46fd-b48f-b8b5ec9d9ef6:facebook.com:/index3.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:33bc78c2-8fe8-485b-8c4f-18425a304479::/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:3748520b-7630-4e76-b220-d9e5a53837ce:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:0fca5a7f-4e05-456d-ad1c-dfcf12971fa9::/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:b4ad13c1-98df-444a-8893-2767be9f00a6::/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:c5592bf4-db40-40e5-8f25-e6cdfb671134:facebook.com:/index2.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:11a5de3a-80ec-4d4e-b377-00ca53e0657c::/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:db95b369-05b7-4c87-b36b-9ceaba350f14:facebook.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:ebb24bdc-10dd-4693-ad37-bbc37a90d280::'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:51dc04c9-5b0d-4e26-a20d-10f7ea13b3d8::'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:5cc8f631-795b-4416-98a5-abf4c64210a1:google.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:f7a3a251-d62d-4a9f-9950-a3762a865741:google.com:/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:cce06996-15f3-431c-bade-47af14a543dd:facebook.com:'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:88d34687-2e08-4746-9116-b92468140cf5::'
+=>(column='visits', value='7')
+Partition Key: 'site1:month:1538352000:1ae93aca-0770-4d7e-96e4-728aca3d5a7a:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:68caf2ef-6fae-46b5-bb8c-69b9339441ff:facebook.com:'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:4cd5c6d8-21fa-49cd-9ae7-0cb64bc80889:google.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:6efe2834-1763-41c0-9d2c-943bdb6f5962::/index.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:56b7d991-3f32-4055-9ebe-085d7aea66ea::/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:8c297ac9-b113-4e81-b3b5-b379d9e910d3::/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:ca860706-87a1-4692-9d62-14d81a86ed8a::/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:fa910e87-cb39-44f0-9b98-aac2f41a48c2:google.com:/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:9d555ce9-1458-49a8-a9fd-aec655fc8b76::/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:36dae9b7-d66a-403d-813d-a030633939b7:google.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:d53d25b7-7227-4136-ba7b-c398e2e44645:facebook.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:b97d2581-cd76-4523-9767-e6a92ce5f33f:google.com:/index2.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:72feab80-84af-4370-93d9-5867a76f6613:facebook.com:'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:1a0ef06f-37bb-48a4-aac4-bff496bdf4ba:facebook.com:/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:0a9d550e-15c1-4c35-a9d5-2b0de3c2f834::'
+=>(column='visits', value='7')
+Partition Key: 'site1:month:1538352000:c5592bf4-db40-40e5-8f25-e6cdfb671134:facebook.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:72feab80-84af-4370-93d9-5867a76f6613::/index.html'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:5ac0e495-4f68-4586-9f30-34ee31b10b50::/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:0a9d550e-15c1-4c35-a9d5-2b0de3c2f834::/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:d27e8867-5ebe-4f4c-9c4b-3c1f8fe58933:google.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:2a9c5990-731f-4176-ae0f-723bb0d16955:google.com:'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:1a0ef06f-37bb-48a4-aac4-bff496bdf4ba::/index3.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:cce06996-15f3-431c-bade-47af14a543dd:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:433c25d0-04d7-420c-8f00-3d3551c65315::'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:345014aa-ba19-4807-ad29-3140e0af6e8c::/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:a796f998-7c6e-4662-888f-e53375552331::/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:433c25d0-04d7-420c-8f00-3d3551c65315:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:c5592bf4-db40-40e5-8f25-e6cdfb671134:facebook.com:'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:f7cbf5d8-2acd-41a2-958e-aaf3d39db021::/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:9080a896-4f0c-480f-8db4-784b871a3d88:facebook.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:75ca6019-07a6-44e4-a294-1e4d23e27d16:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:4cd5c6d8-21fa-49cd-9ae7-0cb64bc80889:google.com:/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:6a155d84-9855-4f00-8906-bca97c5c624f::/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:4ed9e783-5708-4e8c-94b5-44462307a9e0:google.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:4ed9e783-5708-4e8c-94b5-44462307a9e0::/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:fba427e2-1bb8-4e4a-b674-95a4e9335eec::/index2.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:c5592bf4-db40-40e5-8f25-e6cdfb671134:google.com:/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:cb18ed36-087f-4679-950c-45198deb9b76::'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:954b61f6-e1c9-46b0-92ba-95d88e48263a::/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:56b7d991-3f32-4055-9ebe-085d7aea66ea:facebook.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:6efe2834-1763-41c0-9d2c-943bdb6f5962::'
+=>(column='visits', value='6')
+Partition Key: 'site1:month:1538352000:0d4ddae0-c619-4996-bdf7-989d127e205f:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:5cc8f631-795b-4416-98a5-abf4c64210a1::'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:4ed82e47-7267-490b-b1ec-14fdc0fd68f6:google.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:e567a403-dbb4-419f-905e-5edcbd288903:google.com:/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:52589057-3a8c-4b50-9815-ef73348ef949:facebook.com:/index.html'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:d1081133-337a-4440-a266-14c9fb7f9646::/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:7df2e708-6aad-486a-a51b-631042c8745d::/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:fba427e2-1bb8-4e4a-b674-95a4e9335eec:google.com:'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:aa59d3a9-8549-4c31-a7c9-61a2a86ebcc2::'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:a796f998-7c6e-4662-888f-e53375552331:google.com:/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:9ad4748a-d972-4483-847d-0edb6d30cd3c:facebook.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:1ad156c6-6721-463b-acfe-0e272b2ad242:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:56b7d991-3f32-4055-9ebe-085d7aea66ea:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:e0e921f4-d471-4ba4-bc8c-fbc44aa120c9:google.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:a796f998-7c6e-4662-888f-e53375552331::/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:954b61f6-e1c9-46b0-92ba-95d88e48263a::/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:d42b43df-a328-4aa3-a2a7-739f571265a0:facebook.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:10a48c70-7a02-4900-895e-fe174b8cd8dd:google.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:f495664f-a4a9-465b-8cf1-44a3aec10008:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:db95b369-05b7-4c87-b36b-9ceaba350f14:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:b97d2581-cd76-4523-9767-e6a92ce5f33f:google.com:'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:ca21d0e0-4550-4617-bb55-e7098347cb12:facebook.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:b1408763-4515-4170-a5a6-8be2b1bcdd6b::/index.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:a796f998-7c6e-4662-888f-e53375552331:google.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:d53d25b7-7227-4136-ba7b-c398e2e44645:google.com:'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:f374a37b-f457-411a-8f48-d91eb737739a::'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:07e7de8b-b444-4f93-8264-2bfcabc65856::'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:d42b43df-a328-4aa3-a2a7-739f571265a0::'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:72feab80-84af-4370-93d9-5867a76f6613:google.com:'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:d42b43df-a328-4aa3-a2a7-739f571265a0:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:a9488b5c-67d8-43fa-bab7-69a9d54fc91d:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:52756098-e016-4530-8c2c-f62196d21bb0::/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:7251b216-a15d-4a80-817f-e9a6bad63622:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:bb534976-0347-43fd-9f64-9727126de1d8::/index2.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:6a155d84-9855-4f00-8906-bca97c5c624f:google.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:0a9d550e-15c1-4c35-a9d5-2b0de3c2f834::/index.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:4f478bd3-4262-416a-9cfd-ab095ff3200b:facebook.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:bb534976-0347-43fd-9f64-9727126de1d8::/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:88d34687-2e08-4746-9116-b92468140cf5:facebook.com:'
+=>(column='visits', value='6')
+Partition Key: 'site1:month:1538352000:3f7c2dcc-da6e-42fc-9032-721ea23e89b5:google.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:f7a3a251-d62d-4a9f-9950-a3762a865741::/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:4ed9e783-5708-4e8c-94b5-44462307a9e0:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:5cc8f631-795b-4416-98a5-abf4c64210a1::/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:31dfe103-39c9-42e0-9972-274261a3ab5c:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:c8ed5e93-f9be-4aa1-98c6-ad1a75f364b5:google.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:c5592bf4-db40-40e5-8f25-e6cdfb671134::'
+=>(column='visits', value='8')
+Partition Key: 'site1:month:1538352000:52756098-e016-4530-8c2c-f62196d21bb0::/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:75ca6019-07a6-44e4-a294-1e4d23e27d16::'
+=>(column='visits', value='6')
+Partition Key: 'site1:month:1538352000:3748520b-7630-4e76-b220-d9e5a53837ce:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:9080a896-4f0c-480f-8db4-784b871a3d88::/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:ca860706-87a1-4692-9d62-14d81a86ed8a:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:c66a10ce-261b-47f1-9a30-98b59e7db2f7::/index2.html'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:39a4c5e9-23eb-4ba4-99b9-0c659477a40e::/index3.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:cf6e021e-0a9c-43a7-b4cf-de572779c187::'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:e0e921f4-d471-4ba4-bc8c-fbc44aa120c9::/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:4ed9e783-5708-4e8c-94b5-44462307a9e0:google.com:/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:66c1a839-f1ea-46b7-ae71-cce26fe561e1:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:d42b43df-a328-4aa3-a2a7-739f571265a0:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:88d34687-2e08-4746-9116-b92468140cf5:facebook.com:/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:c66a10ce-261b-47f1-9a30-98b59e7db2f7:facebook.com:/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:31dfe103-39c9-42e0-9972-274261a3ab5c:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:7251b216-a15d-4a80-817f-e9a6bad63622:google.com:'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:c2440dd9-32a4-4ad0-aecd-6171544c9c68::/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:9d555ce9-1458-49a8-a9fd-aec655fc8b76:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:2a9c5990-731f-4176-ae0f-723bb0d16955::/index2.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:cf6e021e-0a9c-43a7-b4cf-de572779c187:facebook.com:'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:9ad4748a-d972-4483-847d-0edb6d30cd3c::/index3.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:1012bfae-2a56-46fd-b48f-b8b5ec9d9ef6:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:5cc8f631-795b-4416-98a5-abf4c64210a1:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:07e7de8b-b444-4f93-8264-2bfcabc65856:google.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:7df2e708-6aad-486a-a51b-631042c8745d:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:6efe2834-1763-41c0-9d2c-943bdb6f5962:google.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:c2440dd9-32a4-4ad0-aecd-6171544c9c68::/index3.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:ad84ae35-22f7-4779-856a-98f60bbf7cce::/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:2725eb26-4fad-42ec-9e54-d98443dd3412::'
+=>(column='visits', value='6')
+Partition Key: 'site1:month:1538352000:fa910e87-cb39-44f0-9b98-aac2f41a48c2:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:994fde8a-0bf5-4b90-935e-da171cfb66d7::/index.html'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:8783be72-b57e-441e-b7af-e65848cbcd4c:google.com:/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:3748520b-7630-4e76-b220-d9e5a53837ce:google.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:d6da687d-4441-456d-98f7-c0df02d8107c::/index.html'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:1012bfae-2a56-46fd-b48f-b8b5ec9d9ef6::/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:52eac37d-b233-4b25-bba0-b0cc2af18ac1::/index.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:c66a10ce-261b-47f1-9a30-98b59e7db2f7:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:33bc78c2-8fe8-485b-8c4f-18425a304479::/index2.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:d27e8867-5ebe-4f4c-9c4b-3c1f8fe58933::/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:49e57733-6e23-4d26-8106-ddfef01dffaa:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:0fdb171e-fd73-4896-a659-dc33905ebec8:google.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:b05efcf3-ab6f-4fcc-8ec1-aedff3d45447:google.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:e567a403-dbb4-419f-905e-5edcbd288903:facebook.com:'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:ad84ae35-22f7-4779-856a-98f60bbf7cce::'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:73d06eb8-aaae-47e1-8d1b-2022d06ce950::/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:b1408763-4515-4170-a5a6-8be2b1bcdd6b::/index3.html'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:57dbecfa-a1b6-4b04-8b86-974a819bd33a::/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:31dfe103-39c9-42e0-9972-274261a3ab5c::/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:2346458b-d64e-432e-b2ce-9414cd27c360:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:57dbecfa-a1b6-4b04-8b86-974a819bd33a:google.com:/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:e0e921f4-d471-4ba4-bc8c-fbc44aa120c9::/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:796e0bd9-9bc6-4360-bba4-41a445c67c33::/index.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:0a9d550e-15c1-4c35-a9d5-2b0de3c2f834::/index2.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:c5592bf4-db40-40e5-8f25-e6cdfb671134::/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:796e0bd9-9bc6-4360-bba4-41a445c67c33:facebook.com:'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:7251b216-a15d-4a80-817f-e9a6bad63622:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:a9488b5c-67d8-43fa-bab7-69a9d54fc91d::/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:51dc04c9-5b0d-4e26-a20d-10f7ea13b3d8::/index2.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:52756098-e016-4530-8c2c-f62196d21bb0:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:57dbecfa-a1b6-4b04-8b86-974a819bd33a:google.com:/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:6a155d84-9855-4f00-8906-bca97c5c624f::/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:1ae93aca-0770-4d7e-96e4-728aca3d5a7a:facebook.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:39a4c5e9-23eb-4ba4-99b9-0c659477a40e:facebook.com:'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:8b795e18-01fe-4084-bcd8-8d429e3721c3::/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:2346458b-d64e-432e-b2ce-9414cd27c360:google.com:/index2.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:9d555ce9-1458-49a8-a9fd-aec655fc8b76:facebook.com:/index3.html'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:0d4ddae0-c619-4996-bdf7-989d127e205f::/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:f2729ac4-6301-4694-ba93-5f0bf36c3d64::'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:36dae9b7-d66a-403d-813d-a030633939b7::/index3.html'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:9080a896-4f0c-480f-8db4-784b871a3d88:google.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:345014aa-ba19-4807-ad29-3140e0af6e8c:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:9d555ce9-1458-49a8-a9fd-aec655fc8b76:google.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:87a081d3-27b8-4852-98e7-9e275854d7b8:facebook.com:/index.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:2725eb26-4fad-42ec-9e54-d98443dd3412:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:d1081133-337a-4440-a266-14c9fb7f9646:facebook.com:'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:1ae93aca-0770-4d7e-96e4-728aca3d5a7a:google.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:56b7d991-3f32-4055-9ebe-085d7aea66ea::'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:ef818f50-aa87-4581-b5a0-981b29be2fd1:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:2a9c5990-731f-4176-ae0f-723bb0d16955:facebook.com:'
+=>(column='visits', value='6')
+Partition Key: 'site1:month:1538352000:56b7d991-3f32-4055-9ebe-085d7aea66ea:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:4f478bd3-4262-416a-9cfd-ab095ff3200b:google.com:/index2.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:f7cbf5d8-2acd-41a2-958e-aaf3d39db021:facebook.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:d6da687d-4441-456d-98f7-c0df02d8107c:google.com:/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:73d06eb8-aaae-47e1-8d1b-2022d06ce950::'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:917a5bb3-49c7-4154-84b5-1c804e804919:google.com:'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:5ac0e495-4f68-4586-9f30-34ee31b10b50:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:88d34687-2e08-4746-9116-b92468140cf5:google.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:db95b369-05b7-4c87-b36b-9ceaba350f14:google.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:b4ad13c1-98df-444a-8893-2767be9f00a6:google.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:5ce41f41-fc18-4a5d-839f-7fd3a4402ec3::/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:433c25d0-04d7-420c-8f00-3d3551c65315:google.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:5ac0e495-4f68-4586-9f30-34ee31b10b50::'
+=>(column='visits', value='6')
+Partition Key: 'site1:month:1538352000:fa910e87-cb39-44f0-9b98-aac2f41a48c2::'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:52eac37d-b233-4b25-bba0-b0cc2af18ac1:facebook.com:/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:87a081d3-27b8-4852-98e7-9e275854d7b8:google.com:/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:5ac0e495-4f68-4586-9f30-34ee31b10b50:facebook.com:'
+=>(column='visits', value='6')
+Partition Key: 'site1:month:1538352000:ebb24bdc-10dd-4693-ad37-bbc37a90d280:facebook.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:b97d2581-cd76-4523-9767-e6a92ce5f33f:facebook.com:/index.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:4f478bd3-4262-416a-9cfd-ab095ff3200b::/index2.html'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:ec4b0716-b346-4dca-bf74-c0c2a540fdd9::/index.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:ca860706-87a1-4692-9d62-14d81a86ed8a::'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:1ad156c6-6721-463b-acfe-0e272b2ad242::/index3.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:ebb24bdc-10dd-4693-ad37-bbc37a90d280:google.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:1d11a3b2-f37e-488f-a429-26d375d17742::'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:75ca6019-07a6-44e4-a294-1e4d23e27d16::/index.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:6efe2834-1763-41c0-9d2c-943bdb6f5962::/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:bb534976-0347-43fd-9f64-9727126de1d8:google.com:'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:66c1a839-f1ea-46b7-ae71-cce26fe561e1::'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:49e57733-6e23-4d26-8106-ddfef01dffaa:google.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:4ed9e783-5708-4e8c-94b5-44462307a9e0:facebook.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:39a4c5e9-23eb-4ba4-99b9-0c659477a40e::'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:a796f998-7c6e-4662-888f-e53375552331:facebook.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:d42b43df-a328-4aa3-a2a7-739f571265a0::/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:56b7d991-3f32-4055-9ebe-085d7aea66ea::/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:11a5de3a-80ec-4d4e-b377-00ca53e0657c:facebook.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:6a155d84-9855-4f00-8906-bca97c5c624f::'
+=>(column='visits', value='6')
+Partition Key: 'site1:month:1538352000:6a155d84-9855-4f00-8906-bca97c5c624f:facebook.com:/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:68caf2ef-6fae-46b5-bb8c-69b9339441ff:facebook.com:/index2.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:ec4b0716-b346-4dca-bf74-c0c2a540fdd9:facebook.com:/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:d1081133-337a-4440-a266-14c9fb7f9646::'
+=>(column='visits', value='6')
+Partition Key: 'site1:month:1538352000:49e57733-6e23-4d26-8106-ddfef01dffaa::/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:d1081133-337a-4440-a266-14c9fb7f9646::/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:1ad156c6-6721-463b-acfe-0e272b2ad242::'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:5ac0e495-4f68-4586-9f30-34ee31b10b50:facebook.com:/index.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:52589057-3a8c-4b50-9815-ef73348ef949:facebook.com:'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:e567a403-dbb4-419f-905e-5edcbd288903:google.com:'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:66c1a839-f1ea-46b7-ae71-cce26fe561e1:google.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:49e57733-6e23-4d26-8106-ddfef01dffaa:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:73d06eb8-aaae-47e1-8d1b-2022d06ce950:google.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:ebb24bdc-10dd-4693-ad37-bbc37a90d280:facebook.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:f374a37b-f457-411a-8f48-d91eb737739a:google.com:/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:a796f998-7c6e-4662-888f-e53375552331:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:d53d25b7-7227-4136-ba7b-c398e2e44645::'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:10a48c70-7a02-4900-895e-fe174b8cd8dd:google.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:33bc78c2-8fe8-485b-8c4f-18425a304479::'
+=>(column='visits', value='10')
+Partition Key: 'site1:month:1538352000:796e0bd9-9bc6-4360-bba4-41a445c67c33::'
+=>(column='visits', value='7')
+Partition Key: 'site1:month:1538352000:31dfe103-39c9-42e0-9972-274261a3ab5c:facebook.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:e567a403-dbb4-419f-905e-5edcbd288903:facebook.com:/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:5cc8f631-795b-4416-98a5-abf4c64210a1:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:f0157b75-1031-4126-b118-93a94036661c:google.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:33bc78c2-8fe8-485b-8c4f-18425a304479:google.com:/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:52589057-3a8c-4b50-9815-ef73348ef949::/index.html'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:ad84ae35-22f7-4779-856a-98f60bbf7cce::/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:31dfe103-39c9-42e0-9972-274261a3ab5c::/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:1d11a3b2-f37e-488f-a429-26d375d17742:facebook.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:0a9d550e-15c1-4c35-a9d5-2b0de3c2f834:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:c8ed5e93-f9be-4aa1-98c6-ad1a75f364b5:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:994fde8a-0bf5-4b90-935e-da171cfb66d7:google.com:/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:f7a3a251-d62d-4a9f-9950-a3762a865741::/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:75ca6019-07a6-44e4-a294-1e4d23e27d16::/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:cce06996-15f3-431c-bade-47af14a543dd:facebook.com:/index.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:f495664f-a4a9-465b-8cf1-44a3aec10008:google.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:0d4ddae0-c619-4996-bdf7-989d127e205f::'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:11a5de3a-80ec-4d4e-b377-00ca53e0657c:google.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:57dbecfa-a1b6-4b04-8b86-974a819bd33a:google.com:/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:51dc04c9-5b0d-4e26-a20d-10f7ea13b3d8:facebook.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:10a48c70-7a02-4900-895e-fe174b8cd8dd::/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:6603d54a-3992-4781-a87d-5154313b203e:google.com:'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:8b795e18-01fe-4084-bcd8-8d429e3721c3:facebook.com:/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:cce06996-15f3-431c-bade-47af14a543dd::/index.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:9d555ce9-1458-49a8-a9fd-aec655fc8b76::/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:6efe2834-1763-41c0-9d2c-943bdb6f5962:google.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:cb18ed36-087f-4679-950c-45198deb9b76::/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:d6da687d-4441-456d-98f7-c0df02d8107c::'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:c66a10ce-261b-47f1-9a30-98b59e7db2f7:google.com:'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:91d58546-919e-41cb-ad79-eb115eff3389:google.com:'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:10a48c70-7a02-4900-895e-fe174b8cd8dd::/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:4ed82e47-7267-490b-b1ec-14fdc0fd68f6::/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:7df2e708-6aad-486a-a51b-631042c8745d:facebook.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:52eac37d-b233-4b25-bba0-b0cc2af18ac1::'
+=>(column='visits', value='7')
+Partition Key: 'site1:month:1538352000:52589057-3a8c-4b50-9815-ef73348ef949:google.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:7df2e708-6aad-486a-a51b-631042c8745d::'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:1ae93aca-0770-4d7e-96e4-728aca3d5a7a:google.com:/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:ec4b0716-b346-4dca-bf74-c0c2a540fdd9:google.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:e0e921f4-d471-4ba4-bc8c-fbc44aa120c9:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:4ed9e783-5708-4e8c-94b5-44462307a9e0::/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:1ad156c6-6721-463b-acfe-0e272b2ad242:google.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:a9488b5c-67d8-43fa-bab7-69a9d54fc91d:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:68caf2ef-6fae-46b5-bb8c-69b9339441ff::/index2.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:73d06eb8-aaae-47e1-8d1b-2022d06ce950:facebook.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:d1081133-337a-4440-a266-14c9fb7f9646:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:1012bfae-2a56-46fd-b48f-b8b5ec9d9ef6::'
+=>(column='visits', value='6')
+Partition Key: 'site1:month:1538352000:2725eb26-4fad-42ec-9e54-d98443dd3412:google.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:ca21d0e0-4550-4617-bb55-e7098347cb12:google.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:8b795e18-01fe-4084-bcd8-8d429e3721c3::'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:f2729ac4-6301-4694-ba93-5f0bf36c3d64::/index.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:8783be72-b57e-441e-b7af-e65848cbcd4c:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:1ae93aca-0770-4d7e-96e4-728aca3d5a7a:google.com:'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:72feab80-84af-4370-93d9-5867a76f6613:google.com:/index.html'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:39a4c5e9-23eb-4ba4-99b9-0c659477a40e::/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:f7a3a251-d62d-4a9f-9950-a3762a865741:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:b97d2581-cd76-4523-9767-e6a92ce5f33f::/index2.html'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:7251b216-a15d-4a80-817f-e9a6bad63622:google.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:345014aa-ba19-4807-ad29-3140e0af6e8c:facebook.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:f0157b75-1031-4126-b118-93a94036661c:facebook.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:9d555ce9-1458-49a8-a9fd-aec655fc8b76:google.com:'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:e61cb449-69c0-475d-905c-a31fd73cca73:google.com:'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:c5592bf4-db40-40e5-8f25-e6cdfb671134::/index2.html'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:11a5de3a-80ec-4d4e-b377-00ca53e0657c:facebook.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:b1408763-4515-4170-a5a6-8be2b1bcdd6b:google.com:/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:ebb24bdc-10dd-4693-ad37-bbc37a90d280::/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:b4ad13c1-98df-444a-8893-2767be9f00a6::'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:2346458b-d64e-432e-b2ce-9414cd27c360:facebook.com:/index.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:56b7d991-3f32-4055-9ebe-085d7aea66ea:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:994fde8a-0bf5-4b90-935e-da171cfb66d7:google.com:/index.html'
+=>(column='visits', value='5')
+Partition Key: 'site1:month:1538352000:1012bfae-2a56-46fd-b48f-b8b5ec9d9ef6:facebook.com:'
+=>(column='visits', value='4')
+Partition Key: 'site1:month:1538352000:51dc04c9-5b0d-4e26-a20d-10f7ea13b3d8:google.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:a9488b5c-67d8-43fa-bab7-69a9d54fc91d:facebook.com:/index.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:91d58546-919e-41cb-ad79-eb115eff3389::'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:ef818f50-aa87-4581-b5a0-981b29be2fd1::/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:7251b216-a15d-4a80-817f-e9a6bad63622:facebook.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:6efe2834-1763-41c0-9d2c-943bdb6f5962:facebook.com:/index2.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:0d4ddae0-c619-4996-bdf7-989d127e205f:facebook.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:433c25d0-04d7-420c-8f00-3d3551c65315:facebook.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:f374a37b-f457-411a-8f48-d91eb737739a:facebook.com:/index3.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:e567a403-dbb4-419f-905e-5edcbd288903::/index2.html'
+=>(column='visits', value='3')
+Partition Key: 'site1:month:1538352000:66c1a839-f1ea-46b7-ae71-cce26fe561e1:google.com:/index2.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:b05efcf3-ab6f-4fcc-8ec1-aedff3d45447::/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:7df2e708-6aad-486a-a51b-631042c8745d:facebook.com:/index.html'
+=>(column='visits', value='1')
+Partition Key: 'site1:month:1538352000:68caf2ef-6fae-46b5-bb8c-69b9339441ff::'
+=>(column='visits', value='6')
+Partition Key: 'site1:month:1538352000:917a5bb3-49c7-4154-84b5-1c804e804919:facebook.com:'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:fba427e2-1bb8-4e4a-b674-95a4e9335eec:google.com:/index3.html'
+=>(column='visits', value='2')
+Partition Key: 'site1:month:1538352000:9080a896-4f0c-480f-8db4-784b871a3d88:facebook.com:/index.html'
+=>(column='visits', value='2')
+
+Column Family: 'site1_cf_monthly_data'
+Partition Key: 'site1:1538352000::'
+=>(column='month_unique:1538352000:visits', value='100')
+Partition Key: 'site1:1538352000:google.com:/index3.html'
+=>(column='month_unique:1538352000:visits', value='56')
+Partition Key: 'site1:1538352000:facebook.com:/index.html'
+=>(column='month_unique:1538352000:visits', value='54')
+Partition Key: 'site1:1538352000::/index2.html'
+=>(column='month_unique:1538352000:visits', value='81')
+Partition Key: 'site1:1538352000:facebook.com:/index2.html'
+=>(column='month_unique:1538352000:visits', value='63')
+Partition Key: 'site1:1538352000:google.com:/index.html'
+=>(column='month_unique:1538352000:visits', value='53')
+Partition Key: 'site1:1538352000:google.com:/index2.html'
+=>(column='month_unique:1538352000:visits', value='52')
+Partition Key: 'site1:1538352000:facebook.com:'
+=>(column='month_unique:1538352000:visits', value='92')
+Partition Key: 'site1:1538352000::/index3.html'
+=>(column='month_unique:1538352000:visits', value='78')
+Partition Key: 'site1:1538352000:facebook.com:/index3.html'
+=>(column='month_unique:1538352000:visits', value='56')
+Partition Key: 'site1:1538352000:google.com:'
+=>(column='month_unique:1538352000:visits', value='96')
+Partition Key: 'site1:1538352000::/index.html'
+=>(column='month_unique:1538352000:visits', value='78')
+
