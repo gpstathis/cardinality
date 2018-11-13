@@ -124,5 +124,9 @@ public class DataGenerator {
       return String.format("guid: %s, timestamp: %d, feature1: %s, feature2: %s", guid, timestamp
           , feature1, feature2);
     }
+
+    public String toCsv() {
+      return String.format("\"%s\",\"%d\",\"%s\",\"%s\"", guid, timestamp, feature1, feature2);
+    }
   }
 }

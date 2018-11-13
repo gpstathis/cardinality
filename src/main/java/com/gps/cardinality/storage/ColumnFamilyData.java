@@ -22,6 +22,8 @@
 
 package com.gps.cardinality.storage;
 
+import java.io.IOException;
+import java.io.Writer;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentSkipListMap;
@@ -212,5 +214,16 @@ public class ColumnFamilyData {
       sb.append('\n');
     }
     return sb.toString();
+  }
+
+  public void write(Writer writer) throws IOException {
+    for (Map.Entry<String, Object> entry : data.entrySet()) {
+      writer.write("=>(column='");
+      writer.write(entry.getKey());
+      writer.write("', value='");
+      writer.write(entry.getValue().toString());
+      writer.write("')");
+      writer.write('\n');
+    }
   }
 }

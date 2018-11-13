@@ -26,6 +26,7 @@ import static com.gps.cardinality.utils.DataGenerator.generateUUIDs;
 import static com.gps.cardinality.utils.Timestamps.toEpoch;
 import static picocli.CommandLine.Option;
 
+import com.gps.cardinality.storage.FileWriter;
 import com.gps.cardinality.storage.Database;
 import com.gps.cardinality.utils.DataGenerator;
 import com.gps.cardinality.utils.DataGenerator.GeneratedData;
@@ -113,12 +114,18 @@ public class Cardinality implements Runnable {
             List.of(landingPages),
             toEpoch(from),
             toEpoch(to), null);
+    FileWriter fileWriter = new FileWriter(siteId);
+    fileWriter.writeCsv("guid,timestamp,feature1,feature2");
     Stream.generate(randomDataSupplier).limit(numSamples).forEach(data -> {
       db.track(
           siteId, data.timestamp, data.guid,
           new TreeMap<>(Map.of("feature1", data.feature1, "feature2", data.feature2)));
+      fileWriter.writeCsv(data.toCsv());
     });
-    System.out.println(db.getGuidDataTable(siteId));
-    System.out.println(db.getMonthlyCountsTable(siteId));
+    fileWriter.writeTable(db.getGuidDataTable(siteId));
+    fileWriter.writeTable(db.getMonthlyCountsTable(siteId));
+    fileWriter.close();
+    System.out.println(String.format("Simulation complete. Check %s and %s for results.",
+        fileWriter.getTablesFilePath(), fileWriter.getCsvFilePath()));
   }
 }

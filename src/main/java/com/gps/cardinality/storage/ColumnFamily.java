@@ -22,6 +22,8 @@
 
 package com.gps.cardinality.storage;
 
+import java.io.IOException;
+import java.io.Writer;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -188,5 +190,17 @@ public class ColumnFamily {
       sb.append(entry.getValue());
     }
     return sb.toString();
+  }
+
+  public void write(Writer writer) throws IOException {
+    writer.write("Column Family: '");
+    writer.write(name);
+    writer.write("'\n");
+    for (Map.Entry<String, ColumnFamilyData> entry : data.entrySet()) {
+      writer.write("Partition Key: '");
+      writer.write(entry.getKey());
+      writer.write("'\n");
+      entry.getValue().write(writer);
+    }
   }
 }
