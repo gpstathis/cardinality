@@ -214,6 +214,14 @@ To verify the numbers, we uploaded the accompanying CSV to Google Sheets (see ht
 
 We can then compare the unique counts for any combination of features. For instance, we can see both in the counts rable row `site1:1538352000:facebook.com:/index3.html` and in the pivot table that the unique number of visitors where `feature1` is `facebook.com` and `feature2` is `/index3.html` in the month of October was 56.
 
+## Notable Classes
+
+* `com.gps.cardinality.Cardinality`: entry point. Builds the in-memory data structures and runs the simulation to populate them.
+* `com.gps.cardinality.utils.DataGenerator`: generates mock visitor data for the simulation
+* `com.gps.cardinality.storage.Database`: Manages all in-memory data store column families.
+* `com.gps.cardinality.storage.ColumnFamily`: Cassandra inspired data structure for storing partitions or ordered key/values.
+* `com.gps.cardinality.storage.ColumnFamilyData`: Represents the data (columns) of a `ColumnFamily` as an ordered hash map (see [ConcurrentSkipListMap](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html)).
+
 ## Running Tests
 
 ```
